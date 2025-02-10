@@ -334,6 +334,20 @@ h2 {
   overflow-x: hidden;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+
 .stickyheader nav a {
   color: #000;
 }
@@ -647,9 +661,9 @@ ul li {
 }
 
 /* Apply the animation to the text items */
-.scrolling-text-inner>div {
+/* .scrolling-text-inner>div {
   animation: var(--direction) var(--marquee-speed) linear infinite;
-}
+} */
 
 /* Pause the animation when a user hovers over it */
 .scrolling-text-container:hover .scrolling-text-inner>div {
