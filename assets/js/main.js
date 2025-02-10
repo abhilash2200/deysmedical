@@ -44,14 +44,23 @@ $(function() {
     
     window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
+      var logo = document.getElementById("stickyLogo");
+      var section = document.querySelector("header section");
+  
       if (window.scrollY > 100) {
           header.classList.add("stickyheader");
           header.style.position = "fixed";
+          logo.classList.remove("hidden"); 
+          section.style.justifyContent = "space-between";
       } else {
           header.classList.remove("stickyheader");
           header.style.position = "absolute";
+          logo.classList.add("hidden");
+          section.style.justifyContent = "flex-end";
       }
-    });
+  });
+  
+  
 
   
   
@@ -159,4 +168,88 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   }).mount();
+})
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#testimonial", {
+    type: "loop",
+    arrows: false,
+    gap: 40,
+    perPage: 3,
+    pagination: true,
+    focus: "center",
+    autoplay: true,
+    speed: 800,
+    interval: 3000, 
+    rewind: true,
+    rewindSpeed: 500,
+    breakpoints: {
+      1024: { perPage: 2 },
+      768: { perPage: 2, gap: 20 },
+      400: { perPage: 1, gap: 10 },
+    },
+  }).mount();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#service", {
+    type: "loop",
+    arrows: false,
+    gap: 10,
+    permove : 1,
+    perPage: 4,
+    pagination: false,
+    focus: "start",
+    autoplay: true,
+    speed: 800,
+    interval: 3000, 
+    rewind: true,
+    rewindSpeed: 500,
+    breakpoints: {
+      1024: { perPage: 2 },
+      768: { perPage: 2, gap: 20 },
+      400: { perPage: 1, gap: 10 },
+    },
+    }).mount();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#tips", {
+    type: "loop",
+    arrows: false,
+    gap: 10,
+    perPage: 3,
+    pagination: false,
+    focus: "start",
+    autoplay: false,
+    speed: 800,
+    interval: 3000, 
+    rewind: true,
+    rewindSpeed: 500,
+    breakpoints: {
+      1024: { perPage: 2 },
+      768: { perPage: 2, gap: 20 },
+      400: { perPage: 1, gap: 10 },
+    },
+  }).mount();
+});
+
+
+document.querySelectorAll('.faq-toggle').forEach(button => {
+  button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.toggle-icon');
+
+      if (content.classList.contains('hidden')) {
+          document.querySelectorAll('.faq-content').forEach(item => item.classList.add('hidden'));
+          document.querySelectorAll('.toggle-icon').forEach(img => img.src = img.dataset.close);
+
+          content.classList.remove('hidden');
+          icon.src = icon.dataset.open;
+      } else {
+          content.classList.add('hidden');
+          icon.src = icon.dataset.close;
+      }
+  });
 })

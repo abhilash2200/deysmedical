@@ -248,43 +248,87 @@ h2 {
   color: #FFC062;
 }
 
-.testimonial {
-  background-color: #E6F6FE;
-  padding: 50px 0px;
-}
+
 
 #thomas {
   color: #000;
   margin-top: 20px;
 }
 
-.testimonial .owl-carousel .item {
-  transition: transform 0.3s, opacity 0.3s;
-  transform: scale(0.9);
-  /* Shrink non-active items */
-  opacity: 0.8;
-  /* Make non-active items dimmer */
+#testimonial .splide__slide {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden; /* Prevent overlapping */
 }
 
-/* Styles for active item */
-.testimonial .owl-carousel .owl-item.active.center .item {
+#testimonial .splide__slide.is-active {
   transform: scale(1.1);
-  /* Enlarge active item */
-  opacity: 1;
-  /* Full visibility */
-  background-color: #fff !important;
-  /* Highlight active item's background */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.096);
-  /* Optional shadow */
-  z-index: 10;
-  /* Bring active item to the front */
+  background-color: #FFF;
+  z-index: 10; /* Increase for better visibility */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
+
+/* Pagination Dots */
+#testimonial .splide__pagination {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+#testimonial .splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
+  border: 2px solid transparent;
+}
+
+#testimonial .splide__pagination__page.is-active {
+  background-color: #1376F8;
+  border: 2px solid #1376F8;
+  box-shadow: 0 0 3px rgba(19, 118, 248, 0.5);
+}
+
+@media (max-width: 400px) {
+  #testimonial
+  .splide__pagination__page {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+#tips
+.splide__slide .absolute {
+  position: absolute;
+  top: 80%; /* Adjust as needed */
+  left: 10%;
+  width: 80%;
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: visible; /* Ensure content is fully visible */
+  z-index: 9;
+}
+
+#tips
+.splide__slide {
+  overflow: visible !important; /* Ensure content is visible */
+}
+
+
+
 
 .stickyheader {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #FFF;
+  background-color: #C1DCFF;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.096);
   transition: background-color 0.3s;
   overflow-x: hidden;
@@ -294,8 +338,17 @@ h2 {
   color: #000;
 }
 
-.stickyheader svg {
+.stickyheader #stickyLogo {
+  display: block !important;
+}
+
+.stickyheader
+.customs-text {
   color: #000;
+}
+
+.customs-text {
+  color: #FFF;
 }
 
 .blog-text {
@@ -308,6 +361,10 @@ h2 {
   position: absolute;
   bottom: -20%;
   left: 10%;
+}
+
+.custom-box-shadow {
+  box-shadow: 0px 2px 5px rgb(0, 69, 158);
 }
 
 .blog-img {

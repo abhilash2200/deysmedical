@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Dey's Medical</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 	<!-- <link rel="icon" type="image/png" href="assets/img/favicon.png"> -->
@@ -147,18 +147,23 @@
 	</div>
 	
 	<header class="w-full z-40">
-		<section class="container mx-auto flex items-center justify-end px-6 pr-[8rem]">
+		<section class="container mx-auto flex items-center justify-end px-6 md:pr-[8rem] pr-[1rem]">
+			<!-- Logo -->
+			<a href="index.html" id="stickyLogo" class="hidden">
+				<img src="assets/img/logo.png" alt="Logo" class="w-[100px]">
+			</a>
 			<!-- Navigation Links -->
 			<nav class="hidden md:flex items-center gap-6  pr-5">
 				<a href="about-us.html" class="text-[#FFF]">About Us</a>
 				<a href="ambulance-services.html" class="text-[#FFF]">Services+</a>
 				<a href="faq.html" class="text-[#FFF]">FAQ</a>
+				
 			</nav>
 	
 			<!-- drawer init and toggle -->
 			<div class="text-center">
 				<button type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
-					<svg class="w-6 h-6 text-white mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<svg class="w-6 h-6 mt-2 customs-text" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
 						<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
 					</svg>					  
 				</button>
@@ -195,8 +200,8 @@
 					
 						<div class="absolute inset-0 flex items-center container">
 							<div class="ml-[50px] p-4 text-white">
-								<h1 class="font-medium text-[40px] pb-2">Medicine Delivery</h1>
-								<h5 class="text-[18px] font-normal">
+								<h1 class="font-medium md:text-[40px] text-[25px] pb-2">Medicine Delivery</h1>
+								<h5 class="md:text-[18px] text-[15px] font-normal">
 									Get <span class="text-[#FFA722]">30%</span> discount on branded <br> medicine
 								</h5>
 							</div>
@@ -208,8 +213,8 @@
 					
 						<div class="absolute inset-0 flex items-center container">
 							<div class="ml-[50px] p-4 text-white">
-								<h1 class="font-medium text-[40px] pb-2">Medicine Delivery</h1>
-								<h5 class="text-[18px] font-normal">
+								<h1 class="font-medium md:text-[40px] text-[25px] pb-2">Medicine Delivery</h1>
+								<h5 class="md:text-[18px] text-[15px] font-normal">
 									Get <span class="text-[#FFA722]">30%</span> discount on branded <br> medicine
 								</h5>
 							</div>
@@ -221,8 +226,8 @@
 					
 						<div class="absolute inset-0 flex items-center container">
 							<div class="ml-[50px] p-4 text-white">
-								<h1 class="font-medium text-[40px] pb-2">Medicine Delivery</h1>
-								<h5 class="text-[18px] font-normal">
+								<h1 class="font-medium md:text-[40px] text-[25px] pb-2">Medicine Delivery</h1>
+								<h5 class="md:text-[18px] text-[15px] font-normal">
 									Get <span class="text-[#FFA722]">30%</span> discount on branded <br> medicine
 								</h5>
 							</div>
@@ -250,17 +255,17 @@
 
 
 	<section class="bg-[#FFF] py-[20px]">
-		<div class="container mx-auto">
+		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap">
 				<div class="w-full md:w-[30%] relative overflow-hidden">
 					<div class="flex flex-col items-start justify-center pt-[30px]">
 
-						<h5 class="text-[#1376F8] font-normal text-[18px] pb-2">WHAT WE PROVIDE</h5>
-						<h2 class="text-[#011632] font-semibold text-[35px] leading-8">Our <br>
-							Medical <br>
+						<h5 class="text-[#1376F8] font-normal md:text-[18px] text-[15px] md:pb-2 pb-0">WHAT WE PROVIDE</h5>
+						<h2 class="text-[#011632] font-semibold md:text-[35px] text-[20px] leading-none md:leading-8">Our <br class="hidden md:block">
+							Medical <br class="hidden md:block">
 							Services</h2>
-						<p class="pb-2 text-[#515151] font-normal text-[16px]">
-							Molestiae non recusandae earum<br>
+						<p class="pb-2 text-[#515151] font-normal md:text-[16px] text-[14px] leading-tight md:leading-none">
+							Molestiae non recusandae earum<br class="hidden md:block">
 							rerum hic tenetur asa
 							piente delectus.
 						</p>
@@ -272,12 +277,12 @@
 
 				<div class="w-full md:w-[70%]">
 					<div class="relative">
-						<img src="assets/img/pro-img.png" alt="Diagnostic" class="w-full h-auto">
-						<div class="absolute top-0 left-0 w-full h-full text-white flex items-center justify-start p-4">
-						  <div class="text-left">
-							<h3 class="text-[25px] font-bold text-[#000]">We Provide<br>Best Medical<br>Treatment</h3>
-							<p class="mt-2 text-[#515151] font-normal pb-3">A placeholder text commonly<br> used to demonstrate the visual<br> form of a document....</p>
-							<a href="" class="flex justify-between"><p class="text-[#1376F8] font-bold text-[18px] pr-2">Book An Appointment </p><img src="assets/img/a-arrow.png" alt="" class="w-6 h-6"></a>
+						<img src="assets/img/pro-img.png" alt="Diagnostic" class="w-full h-64 md:h-auto">
+						<div class="absolute top-0 left-0 w-full h-full text-white flex items-center justify-start md:p-4 p-0">
+						  <div class="text-left p-2">
+							<h3 class="md:text-[25px] text-[15px] md:font-bold font-normal text-[#000] pb-3">We Provide <br class="md:block">Best Medical <br class="hidden md:block">Treatment</h3>
+							<p class="md:mt-2 mt-0 text-[#515151] font-normal md:pb-3 pb-2">A placeholder text commonly<br class="md:block"> used to demonstrate the<br class="md:hidden"> visual<br class="hidden md:block"> form of a document....</p>
+							<a href="" class="flex md:justify-between"><p class="text-[#1376F8] font-bold text-[18px] pr-2">Book An Appointment </p><img src="assets/img/a-arrow.png" alt="" class="w-6 h-6"></a>
 						  </div>
 						</div>
 					</div>					  
@@ -287,77 +292,90 @@
 	</section>
 
 	<section class="bg-[#FFF] py-[20px]">
-		<div class="container mx-auto">
-			<div class="flex flex-wrap justify-between">
-				<div class="w-full md:w-[24%] bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
-					<div class="flex flex-col items-start justify-center py-6">
-					  <img src="assets/img/labtest.png" alt="" class="w-16 h-16">
-					  <h4 class="text-[#011632] font-semibold text-[18px] pb-2">Diagnostic</h4>
-					  <p class="text-[#515151] font-normal text-[16px] leading-tight pb-2">
-						Duis aute irure dolor in reprehen in voluta
-					  </p>
-					  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
+		<div class="container mx-auto px-4">
+			<section class="splide" id="service" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					  <ul class="splide__list">
+						  <li class="splide__slide">
+							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
+								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								  <img src="assets/img/labtest.png" alt="" class="w-16 h-16">
+								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Diagnostic</h4>
+								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
+									Duis aute irure dolor in reprehen in voluta
+								  </p>
+								  <a href="" class="text-[#1376F8] font-normal md:text-[15px] text-[13px]">Read More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						  </li>
+						  <li class="splide__slide">
+							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
+								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								  <img src="assets/img/ambulance2.png" alt="" class="w-16 h-16">
+								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Medicine Delivery</h4>
+								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
+									Duis aute irure dolor in reprehen in voluta
+								  </p>
+								  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						  </li>
+						  <li class="splide__slide">
+							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
+								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								  <img src="assets/img/doctor-icon.png" alt="" class="w-16 h-16">
+								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Doctor Consultation</h4>
+								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
+									Duis aute irure dolor in reprehen in voluta
+								  </p>
+								  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						  </li>
+						  <li class="splide__slide">
+							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300 ease-in-out">
+								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								  <img src="assets/img/ambulance-1.png" alt="" class="w-16 h-16">
+								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Pincodewise Ambulance</h4>
+								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
+									Duis aute irure dolor in reprehen in voluta
+								  </p>
+								  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
+								</div>
+							  </div>
+						  </li>
+					  </ul>
 				</div>
-				<div class="w-full md:w-[24%] bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
-					<div class="flex flex-col items-start justify-center py-6">
-					  <img src="assets/img/ambulance2.png" alt="" class="w-16 h-16">
-					  <h4 class="text-[#011632] font-semibold text-[18px] pb-2">Medicine Delivery</h4>
-					  <p class="text-[#515151] font-normal text-[16px] leading-tight pb-2">
-						Duis aute irure dolor in reprehen in voluta
-					  </p>
-					  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-				<div class="w-full md:w-[24%] bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
-					<div class="flex flex-col items-start justify-center py-6">
-					  <img src="assets/img/doctor-icon.png" alt="" class="w-16 h-16">
-					  <h4 class="text-[#011632] font-semibold text-[18px] pb-2">Doctor Consultation</h4>
-					  <p class="text-[#515151] font-normal text-[16px] leading-tight pb-2">
-						Duis aute irure dolor in reprehen in voluta
-					  </p>
-					  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-				<div class="w-full md:w-[24%] bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300 ease-in-out">
-					<div class="flex flex-col items-start justify-center py-6">
-					  <img src="assets/img/ambulance-1.png" alt="" class="w-16 h-16">
-					  <h4 class="text-[#011632] font-semibold text-[18px] pb-2">Pincodewise Ambulance</h4>
-					  <p class="text-[#515151] font-normal text-[16px] leading-tight pb-2">
-						Duis aute irure dolor in reprehen in voluta
-					  </p>
-					  <a href="" class="text-[#1376F8] font-normal text-[15px]">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
-				  </div>				  
-			</div>
+			</section>
 		</div>            
 	</section>
 
+
 	<section class="bg-[#FFF] py-[20px]">
 		<div class="flex flex-wrap">
-			<div class="w-full md:w-[50%] bg-[#011632] pl-[80px] py-[50px]">
-				<h4 class="font-normal text-[20px] text-[#FFF] pb-2">WHY CHOOSE US</h4>
-				<h2 class="text-[#00FFCC] font-semibold text-[40px] pb-5">Choose The Best For Your<br> Health</h2>
+			<div class="w-full md:w-[50%] bg-[#011632] md:pl-[80px] pl-4 py-[50px]">
+				<h4 class="font-normal md:text-[20px] text-[#FFF] pb-2 text-[18px]">WHY CHOOSE US</h4>
+				<h2 class="text-[#00FFCC] font-semibold md:text-[35px] text-[25px] md:pb-5 pb-3">Choose The Best For Your<br class="hidden md:block"> Health</h2>
 				<div>
 					<div class="flex items-center pb-3">
-						<img src="assets/img/female.png" alt="" class="me-3 w-16 h-16">
+						<img src="assets/img/female.png" alt="" class="me-3 md:w-16 w-8 md:h-16 h-8">
 						<div>
-							<h4 class="text-[#FFF] font-normal text-[25px]">Professional Staff</h4>
-                            <p class="text-[#FFF] font-normal text-[15px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
+							<h4 class="text-[#FFF] font-normal md:text-[25px] text-[20px]">Professional Staff</h4>
+                            <p class="text-[#FFF] font-normal md:text-[15px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
 						</div>
 					</div>
 					<div class="flex items-center pb-3">
-						<img src="assets/img/Out-Patient-Department.png" alt="" class="me-3 w-16 h-16">
+						<img src="assets/img/Out-Patient-Department.png" alt="" class="me-3 md:w-16 w-8 md:h-16 h-8">
 						<div>
-							<h4 class="text-[#FFF] font-normal text-[25px]">Online Appointment</h4>
-                            <p class="text-[#FFF] font-normal text-[15px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
+							<h4 class="text-[#FFF] font-normal md:text-[25px] text-[20px]">Online Appointment</h4>
+                            <p class="text-[#FFF] font-normal md:text-[15px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
 						</div>
 					</div>
 					<div class="flex items-center">
-						<img src="assets/img/Medical-Bag.png" alt="" class="me-3 w-16 h-16">
+						<img src="assets/img/Medical-Bag.png" alt="" class="me-3 md:w-16 w-8 md:h-16 h-8">
 						<div>
-							<h4 class="text-[#FFF] font-normal text-[25px]">Emergency Case</h4>
-                            <p class="text-[#FFF] font-normal text-[15px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
+							<h4 class="text-[#FFF] font-normal md:text-[25px] text-[20px]">Emergency Case</h4>
+                            <p class="text-[#FFF] font-normal md:text-[15px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
 						</div>
 					</div>
 				</div>
@@ -368,270 +386,233 @@
 		</div>
 	</section>
 
-	<section class="relative bg-cover bg-center bg-no-repeat px-1 md:px-12 my-[20px]"
-		style="background-image: url('assets/img/grl-background.png');">
-		<div class="container mx-auto">
-			<div class="flex flex-col md:flex-row items-center gap-8">
-				<!-- Girl Image (Left on Desktop, Top on Mobile) -->
-				<div class="w-full md:w-1/2">
-					<img src="assets/img/female-medical-professional.png" alt="Girl" class="w-full max-w-sm mx-auto">
-				</div>
-
-				<!-- FAQ Section (Right on Desktop, Below on Mobile) -->
-				<div class="w-full md:w-1/2">
-					<p class="text-white font-normal text-[18px]">FAQS</p>
-					<h2 class="text-3xl font-bold text-white text-[37px] mb-6 md:text-left">
-						Frequently Asked <br/>Question?
-					</h2>
-
-					<!-- Accordion -->
-					<div class="space-y-4 mx-auto mb-3 lg:mb-0">
-						<!-- First Position -->
-						<div class="bg-white text-black rounded-lg">
-							<div class="flex justify-between">
-								<div class="w-full px-3 py-3 text-sm lg:text-lg">
-									01. What services does the Deys Medicare offer?
-								</div>
-								<div class="px-3 lg:px-16 py-3 cursor-pointer flex items-center">
-									<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-										data-target="telecaller-details1" data-add-src="assets/img/add-circle.png"
-										data-minus-src="assets\img\minus-cirlce-green.png">
-								</div>
-							</div>
-							<div id="telecaller-details1" class="bg-white text-black px-4 hidden">
-								<div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-									Deys Medicare is strategically located for easy access, ensuring that you can
-									reach us conveniently from various parts of the community.
-									We also provide accessibility.
-								</div>
-							</div>
+	<section class="bg-[#FFF] py-[20px]">
+		<div class="flex flex-wrap">
+			<!-- Left Side with Image -->
+			<div class="w-full md:w-[50%] bg-[url(./assets/img/faq-bg-1.png)] bg-cover flex justify-center items-center">
+				<img src="assets/img/female-medical-professional.png" alt="Girl" class="w-full max-w-sm mx-auto">
+			</div>
+	
+			<!-- Right Side with FAQ -->
+			<div class="w-full md:w-[50%] bg-[url(./assets/img/faq-bg-2.png)] bg-cover p-6">
+				<p class="text-white font-normal text-[18px]">FAQS</p>
+				<h2 class="text-[20px] font-bold text-white md:text-[37px] mb-6">
+					Frequently Asked <br class="hidden md:block"> Questions?
+				</h2>
+	
+				<!-- Accordion -->
+				<div class="space-y-4">
+					<!-- FAQ Item -->
+					<div class="bg-white text-black rounded-lg shadow-lg">
+						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
+							<span class="text-sm lg:text-lg font-medium">01. What services does Deys Medicare offer?</span>
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:w-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+						</button>
+						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
+							Deys Medicare is strategically located for easy access, ensuring that you can reach us conveniently from various parts of the community.
 						</div>
-
-						<!-- Second Position -->
-						<div class="bg-white text-black rounded-lg">
-							<div class="flex justify-between">
-								<div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-									02.  How do I schedule an appointment?
-								</div>
-								<div class="px-3 lg:px-16 py-3 cursor-pointer flex items-center">
-									<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-										data-target="telecaller-details2" data-add-src="assets/img/add-circle.png"
-										data-minus-src="assets\img\minus-cirlce-green.png">
-								</div>
-							</div>
-							<div id="telecaller-details2" class="bg-white text-black px-4 hidden">
-								<div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-									Deys Medicare is strategically located for easy access, ensuring that you can
-									reach us conveniently from various parts of the community.
-									We also provide accessibility.
-								</div>
-							</div>
+					</div>
+	
+					<!-- FAQ Item -->
+					<div class="bg-white text-black rounded-lg shadow-lg">
+						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
+							<span class="text-sm lg:text-lg font-medium">02. How do I schedule an appointment?</span>
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:w-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+						</button>
+						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
+							You can schedule an appointment via our website, phone call, or by visiting our clinic directly.
 						</div>
-
-						<!-- Third Position -->
-						<div class="bg-white text-black rounded-lg">
-							<div class="flex justify-between">
-								<div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-									03.  What are the clinic hours of operation?
-								</div>
-								<div class="px-3 lg:px-16 py-3 cursor-pointer flex items-center">
-									<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-										data-target="telecaller-details3" data-add-src="assets/img/add-circle.png"
-										data-minus-src="assets\img\minus-cirlce-green.png">
-								</div>
-							</div>
-							<div id="telecaller-details3" class="bg-white text-black px-4 hidden">
-								<div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-									Deys Medicare is strategically located for easy access, ensuring that you can
-									reach us conveniently from various parts of the community.
-									We also provide accessibility.
-								</div>
-							</div>
+					</div>
+	
+					<!-- FAQ Item -->
+					<div class="bg-white text-black rounded-lg shadow-lg">
+						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
+							<span class="text-sm lg:text-lg font-medium">03. What are the clinic hours of operation?</span>
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:w-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+						</button>
+						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
+							Our clinic is open Monday to Friday from 9 AM to 6 PM and on Saturdays from 10 AM to 4 PM.
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
 
 
 	<section class="bg-[url('./assets/img/mask-bg.png')] bg-cover bg-center py-[20px]">
 		<div class="container mx-auto">
-			<div class="flex flex-wrap justify-between text-center text-white">
-				<div class="w-full md:w-[20%] p-4 text-left">
-					<h3 class="text-3xl font-bold text-[#FFF]">69k+</h3>
-					<p class="text-lg text-[#FFF]">Satisfied Patients</p>
+			<div class="flex flex-wrap justify-between text-center text-white gap-y-3">
+				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
+					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">69k+</h3>
+					<p class="text-sm md:text-lg text-[#FFF]">Satisfied<br class="md:hidden"> Patients</p>
 				</div>
 
-				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px]"></div>
+				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px] hidden md:block"></div>
 	
-				<div class="w-full md:w-[20%] p-4 text-left">
-					<h3 class="text-3xl font-bold text-[#FFF]">236+</h3>
-					<p class="text-lg text-[#FFF]">Medicine Delivery</p>
+				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
+					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">236+</h3>
+					<p class="text-sm md:text-lg text-[#FFF]">Medicine<br class="md:hidden"> Delivery</p>
 				</div>
 
-				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px]"></div>
+				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px] hidden md:block"></div>
 	
-				<div class="w-full md:w-[20%] p-4 text-left">
-					<h3 class="text-3xl font-bold text-[#FFF]">42+</h3>
-					<p class="text-lg text-[#FFF]">Years of Experience</p>
+				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
+					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">42+</h3>
+					<p class="text-sm md:text-lg text-[#FFF]">Years of Experience</p>
 				</div>
 
-				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px]"></div>
+				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px] hidden md:block"></div>
 	
-				<div class="w-full md:w-[20%] p-4 text-left">
-					<h3 class="text-3xl font-bold text-[#FFF]">320+</h3>
-					<p class="text-lg text-[#FFF]">Ambulance Services</p>
+				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
+					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">320+</h3>
+					<p class="text-sm md:text-lg text-[#FFF]">Ambulance<br class="md:hidden"> Services</p>
 				</div>
 			</div>
 		</div>
-	</section>	
-
-	<!-- <section class="testimonial mb">
-		<div class="container">
-			<h5 id="prov">OUR TESTIMONIALS</h5>
-			<h2 style="color: #1376F8;">What Patients are Saying!</h2>
-			<div class="owl-carousel owl-theme">
-				<div class="item">
-					<div class="testi-box active">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
-							magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
-							soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
-							deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
-							corporis quo veniam.</p>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<h5 id="thomas">Thomas daniel</h5>
-					</div>
+	</section>
+	
+	<section class="bg-[url('./assets/img/testi-bg.jpg')] bg-cover bg-center pt-[20px] pb-[50px]">
+		<div class="container mx-auto px-4">
+			<h5 class="text-[#1376F8] font-normal md:text-[20px] text-[18px]">OUR TESTIMONIALS</h5>
+			<p class="text-[#1376F8] font-medium md:text-[35px] text-[25px] pb-3">What Patients are Saying!</p>
+			<section class="splide" id="testimonial" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					  <ul class="splide__list">
+						  <li class="splide__slide">
+							<div class="px-4 py-8 rounded-lg text-center">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
+									magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
+									soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
+									deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
+									corporis quo veniam.</p>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<h5 id="thomas">Thomas daniel</h5>
+							</div>
+						  </li>
+						  <li class="splide__slide">
+							<div class="px-4 py-8 rounded-lg text-center">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
+									magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
+									soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
+									deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
+									corporis quo veniam.</p>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<h5 id="thomas">Thomas daniel</h5>
+							</div>
+						  </li>
+						  <li class="splide__slide">
+							<div class="px-4 py-8 rounded-lg text-center">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
+									magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
+									soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
+									deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
+									corporis quo veniam.</p>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<span><i class="fa-solid fa-star"></i></span>
+								<h5 id="thomas">Thomas daniel</h5>
+							</div>
+						  </li>
+					  </ul>
 				</div>
-				<div class="item">
-					<div class="testi-box">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
-							magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
-							soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
-							deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
-							corporis quo veniam.</p>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<h5 id="thomas">Rukhsar</h5>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi-box">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
-							magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
-							soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
-							deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
-							corporis quo veniam.</p>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<h5 id="thomas">Sourav</h5>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi-box">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum mollitia nam accusamus quo
-							magni minus sunt sint veniam, quasi esse rem recusandae culpa nemo doloremque quibusdam,
-							soluta impedit odit asperiores beatae placeat repellat laboriosam ratione repudiandae
-							deserunt. Ex dolores beatae consequatur mollitia recusandae unde repellendus? In assumenda
-							corporis quo veniam.</p>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<span><i class="fa-solid fa-star"></i></span>
-						<h5 id="thomas">sharukh</h5>
-					</div>
-				</div>
-			</div>
+			</section>
 		</div>
-	</section> -->
+	</section>
 
-
-	<section class="tips">
-		<div class="container">
-			<h5 id="prov">ARTICLE & TIPS</h5>
-			<h2>Latest News & Blogs</h2>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-12">
-					<div class="blog-box">
-						<div class="blog-img">
-							<img src="assets/img/blog-img.png" alt="" class="img-fluid">
-							<div class="blog-text">
-								<span><i class="fa-solid fa-calendar"></i></span>
-								<span>2nd Oct,2024 </span>
-								<h6>Get the Home care and nursing service </h6>
-								<p>
-									Debitis aut rerum nec sitatoe bus saerue eveniet...
-								</p>
-								<a href="">Read More <i class="fa fa-angle-right"></i></a>
+	
+	<section class="bg-[#FFF] py-[20px] mb-[10px]">
+		<div class="container mx-auto px-4">
+			<h5 class="text-[#1376F8] font-normal md:text-[20px] text-[18px]">ARTICLE & TIPS</h5>
+			<p class="text-[#011632] font-medium md:text-[35px] text-[25px] pb-3">Latest News & Blogs</p>
+			<section class="splide" id="tips" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					  <ul class="splide__list">
+						  <li class="splide__slide">
+							<div class="w-full flex flex-col items-center justify-center">
+								<img src="assets/img/blog-img.png" alt="">
+								<div class="bg-[#FFF] mb-[10px] -mt-[100px] rounded-lg custom-box-shadow w-[80%]">
+									<div class="p-4">
+										<span><i class="fa-solid fa-calendar"></i></span>
+										<span class="text-[#1376F8] text-[15px]">2nd Oct,2024 </span>
+										<h6 class="text-[#000] mt-3 text-[18px] leading-tight pb-3">Get the Home care and nursing service </h6>
+										<p class="text-[#515151] font-normal text-[15px] leading-tight pb-3">
+											Debitis aut rerum nec sitatoe bus saerue eveniet...
+										</p>
+										<a href="" class="text-[#1376F8] font-normal text-[15px]">Read More ></a>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-12">
-					<div class="blog-box">
-						<div class="blog-img">
-							<img src="assets/img/blog-img.png" alt="" class="img-fluid">
-							<div class="blog-text">
-								<span><i class="fa-solid fa-calendar"></i></span>
-								<span>2nd Oct,2024 </span>
-								<h6>Get the Home care and nursing service </h6>
-								<p>
-									Debitis aut rerum nec sitatoe bus saerue eveniet...
-								</p>
-								<a href="">Read More <i class="fa fa-angle-right"></i></a>
+						  </li>
+						  <li class="splide__slide">
+							<div class="w-full flex flex-col items-center justify-center">
+								<img src="assets/img/blog-img.png" alt="">
+								<div class="bg-[#FFF] mb-[10px] -mt-[100px] rounded-lg custom-box-shadow w-[80%]">
+									<div class="p-4">
+										<span><i class="fa-solid fa-calendar"></i></span>
+										<span class="text-[#1376F8] text-[15px]">2nd Oct,2024 </span>
+										<h6 class="text-[#000] mt-3 text-[18px] leading-tight pb-3">Get the Home care and nursing service </h6>
+										<p class="text-[#515151] font-normal text-[15px] leading-tight pb-3">
+											Debitis aut rerum nec sitatoe bus saerue eveniet...
+										</p>
+										<a href="" class="text-[#1376F8] font-normal text-[15px]">Read More ></a>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-12">
-					<div class="blog-box">
-						<div class="blog-img">
-							<img src="assets/img/blog-img.png" alt="" class="img-fluid">
-							<div class="blog-text">
-								<span><i class="fa-solid fa-calendar"></i></span>
-								<span>2nd Oct,2024 </span>
-								<h6>Get the Home care and nursing service </h6>
-								<p>
-									Debitis aut rerum nec sitatoe bus saerue eveniet...
-								</p>
-								<a href="">Read More <i class="fa fa-angle-right"></i></a>
+						  </li>
+						  <li class="splide__slide">
+							<div class="w-full flex flex-col items-center justify-center">
+								<img src="assets/img/blog-img.png" alt="">
+								<div class="bg-[#FFF] mb-[10px] -mt-[100px] rounded-lg custom-box-shadow w-[80%]">
+									<div class="p-4">
+										<span><i class="fa-solid fa-calendar"></i></span>
+										<span class="text-[#1376F8] text-[15px]">2nd Oct,2024 </span>
+										<h6 class="text-[#000] mt-3 text-[18px] leading-tight pb-3">Get the Home care and nursing service </h6>
+										<p class="text-[#515151] font-normal text-[15px] leading-tight pb-3">
+											Debitis aut rerum nec sitatoe bus saerue eveniet...
+										</p>
+										<a href="" class="text-[#1376F8] font-normal text-[15px]">Read More ></a>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
+						  </li>
+					  </ul>
 				</div>
-			</div>
+			  </section>
 		</div>
 	</section>
 
 
 	<section>
-		<div class="mt-[10px] lg:mt-[120px] -mb-[200px] lg:-mb-[300px] w-full">
+		<div class="mt-[10px] lg:mt-[40px] -mb-[80px] lg:-mb-[300px] w-full">
 			<div class="container mx-auto px-4">
 				<div class="flex flex-wrap">
 					<!-- Spacer for large screens -->
 					<div class="hidden md:block md:w-1/12"></div>
 					<div class="w-full md:w-10/12">
-						<div class="bg-cover bg-center bg-no-repeat h-64 md:h-80 lg:h-96 flex flex-col justify-center items-start p-6 md:p-10 lg:p-16 rounded-xl"
+						<div class="bg-cover bg-center bg-no-repeat h-40 md:h-80 lg:h-96 flex flex-col justify-center items-start p-6 md:p-10 lg:p-16 rounded-xl"
 							style="background-image: url('assets/img/last-img.png');">
-							<p class="text-white text-10px md:text-[16px] lg:text-[16px]">GET IN TOUCH</p>
-							<p class="text-white text-[20px] md:text-[30px] lg:text-[40px] font-bold mt-2">
-								Provide The Best<br /> Medical Service for You!
+							<p class="text-white text-[15px] md:text-[16px] lg:text-[16px]">GET IN TOUCH</p>
+							<p class="text-white text-[20px] md:text-[30px] lg:text-[40px] font-bold md:mt-2 mt-0 leading-tight md:leading-none">
+								Provide The Best<br class="hidden md:block"> Medical Service for You!
 							</p>
 							<button
-								class="bg-white text-[#1376F8] font-semibold text-sm md:text-base py-2 px-4 md:py-3 md:px-6 rounded-lg mt-4 transition-transform transform hover:scale-105 hover:bg-blue-600 hover:text-white">
-								Contact Us
+  							class="bg-white text-[#1376F8] font-semibold text-sm md:text-base py-2 px-4 md:py-3 md:px-6 rounded-lg mt-4 
+         							transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#1376F8] hover:text-white hover:shadow-lg">
+  							Contact Us
 							</button>
+
 						</div>
 					</div>
 				</div>
@@ -640,7 +621,7 @@
 	</section>
 
 
-	<section class="pt-[200px] lg:pt-[350px] bg-blue-600 pb-[60px] lg:pb-[20px] text-white">
+	<section class="pt-[80px] lg:pt-[350px] bg-[url(./assets/img/footer-bg.png)] pb-[60px] lg:pb-[20px] text-white">
 		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap">
 				<!-- Left Column -->
@@ -722,16 +703,30 @@
 
 
 	<!-- Sticky Bottom Button -->
-	<div class="bottom-button">
-		<a href="https://api.whatsapp.com/send?phone=7501644301">
-			<button class="whatsapp-btn"><img src="assets/img/whatsapp.png" alt="whatsapp" width="30px"></button>
-		</a>
-		<a href="tel:9836394366">
-			<button class="phone-btn"><img src="assets/img/phone.png" alt="phone" width="30px"></button>
-		</a>
-		<button class="apply-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/order.png"
-				alt="whatsapp" width="30px"></button>
-	</div>
+	<section class="sticky bottom-0 md:hidden lg:hidden z-20">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap justify-around">
+                    <div class="w-[33.33%] flex justify-center bg-[#29A71A] py-3">
+                        <a href="">
+                            <svg class="w-6 h-6 text-[#FFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z" clip-rule="evenodd"/>
+                                <path fill="currentColor" d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-[33.33%] flex justify-center bg-[#1376F8] py-3">
+                        <a href="">
+                            <svg class="w-6 h-6 text-[#FFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-[33.33%] flex justify-center bg-[#B91319] py-3">
+                        <button class="block text-white font-medium rounded-lg text-[15px] text-center" type="button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+    </section>
 	<!-- End -->
 
 	<div class="go-top active">
@@ -744,56 +739,13 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.0/flowbite.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
-	<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	
-
-	<script>
-		$(document).ready(function () {
-			$(".owl-carousel").owlCarousel({
-				margin: 10,
-				center: true, // Ensure the active item stays in the center
-				loop: true,
-				autoplay: true,
-				autoplayTimeout: 5000,
-				smartSpeed: 1050,
-				dots: true,
-				responsive: {
-					0: { items: 1 },
-					600: { items: 2 },
-					1000: { items: 3 }
-				}
-			});
-		});
-	</script>
-	<script>
-		document.querySelectorAll('.toggle-content').forEach((toggle) => {
-			toggle.addEventListener('click', (e) => {
-				const targetId = toggle.getAttribute('data-target');
-				const targetElement = document.getElementById(targetId);
-
-				const addSrc = toggle.getAttribute('data-add-src');
-				const minusSrc = toggle.getAttribute('data-minus-src');
-
-				if (targetElement) {
-					// Toggle visibility of the target content
-					targetElement.classList.toggle('hidden');
-
-					// Switch image source based on visibility
-					if (targetElement.classList.contains('hidden')) {
-						toggle.src = addSrc; // Show add-circle
-					} else {
-						toggle.src = minusSrc; // Show minus-circle
-					}
-				}
-			});
-		});
-	</script>
 </body>
 
 </html>
