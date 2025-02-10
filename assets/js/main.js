@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     arrows: false,
     gap: 10,
-    permove : 1,
+    perMove : 1,
     perPage: 4,
     pagination: false,
     focus: "start",
