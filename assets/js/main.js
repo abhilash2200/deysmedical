@@ -192,6 +192,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#videoreview", {
+    type: "loop",
+    arrows: false,
+    gap: 20,
+    perPage: 3,
+    pagination: true,
+    focus: "center",
+    autoplay: false, // Users manually play videos
+    rewindSpeed: 500,
+    breakpoints: {
+      1024: { perPage: 2, gap: 15 },
+      768: { perPage: 1, gap: 10 },
+    },
+  }).mount();
+});
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#service", {
