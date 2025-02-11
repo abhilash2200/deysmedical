@@ -256,17 +256,18 @@ h2 {
 }
 
 #testimonial .splide__slide {
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out;
   background-color: #F5F5F5;
   border-radius: 10px;
   padding: 20px;
   overflow: hidden; /* Prevent overlapping */
+  transform: scale(0.9); /* Default small size */
 }
 
 #testimonial .splide__slide.is-active {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Active slide zoom */
   background-color: #FFF;
-  z-index: 10; /* Increase for better visibility */
+  z-index: 10; /* Ensure visibility */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
@@ -294,6 +295,7 @@ h2 {
   border: 2px solid #1376F8;
   box-shadow: 0 0 3px rgba(19, 118, 248, 0.5);
 }
+
 
 @media (max-width: 400px) {
   #testimonial

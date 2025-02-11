@@ -181,16 +181,17 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: "center",
     autoplay: true,
     speed: 800,
-    interval: 3000, 
+    interval: 3000,
     rewind: true,
     rewindSpeed: 500,
     breakpoints: {
-      1024: { perPage: 2 },
+      1024: { perPage: 2, gap: 30 },
       768: { perPage: 2, gap: 20 },
-      400: { perPage: 1, gap: 10 },
+      480: { perPage: 1, gap: 10 },
     },
   }).mount();
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#service", {
