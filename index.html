@@ -71,7 +71,7 @@
 		</div>
 	</section>
 
-	<div class="bg-[#FF5858] text-[#FFF] overflow-hidden whitespace-nowrap py-2">
+	<section class="bg-[#FF5858] text-[#FFF] overflow-hidden whitespace-nowrap py-2">
 		<div class="flex animate-marquee space-x-10">
 			<p class="text-lg font-semibold text-[#FFF]">
 				Call us for any emergency cases : 1-300-400-8211
@@ -86,31 +86,40 @@
 				Call us for any emergency cases : 1-300-400-8211
 			</p>
 		</div>
-	</div>
+	</section>
 	
 	
 	<header class="w-full z-40">
-		<section class="container mx-auto flex items-center justify-end px-6 md:pr-[8rem] pr-[1rem]">
-			<!-- Logo -->
-			<a href="index.html" id="stickyLogo" class="hidden">
-				<img src="assets/img/logo.png" alt="Logo" class="w-[100px]">
-			</a>
-			<!-- Navigation Links -->
-			<nav class="hidden md:flex items-center gap-6  pr-5">
-				<a href="about-us.html" class="text-[#FFF]">About Us</a>
-				<a href="ambulance-services.html" class="text-[#FFF]">Services+</a>
-				<a href="faq.html" class="text-[#FFF]">FAQ</a>
-				
-			</nav>
-	
-			<!-- drawer init and toggle -->
-			<div class="text-center">
-				<button type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
-					<svg class="w-6 h-6 mt-2 customs-text" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-						<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
-					</svg>					  
-				</button>
+		<section class="container mx-auto px-6 md:pr-[5rem] lg:pr-[8rem] pr-[1rem]">
+			<div class="flex justify-between">
+				<div class="flex items-center justify-start">
+					<!-- Logo -->
+					<a href="index.html" id="stickyLogo" class="hidden">
+					<img src="assets/img/logo.png" alt="Logo" class="w-[100px]">
+					</a>
+				</div>
+
+
+				<div class="flex items-center justify-end">
+					<nav class="hidden md:flex items-center gap-6  pr-5">
+						<a href="about-us.html" class="text-[#FFF]">About Us</a>
+						<a href="ambulance-services.html" class="text-[#FFF]">Services+</a>
+						<a href="faq.html" class="text-[#FFF]">FAQ</a>			
+					</nav>
+
+					<!-- drawer init and toggle -->
+				<div class="text-center">
+					<button type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+						<svg class="w-6 h-6 mt-2 customs-text" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+						</svg>					  
+					</button>
+				</div>
 			</div>
+		</div>
+			
+			<!-- Navigation Links -->
+			
 	
 			<!-- drawer component -->
 			<div id="drawer-right-example" class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-black/50 w-80" tabindex="-1" aria-labelledby="drawer-right-label">
@@ -124,11 +133,11 @@
 	
 				<!-- Navigation links -->
 				<div class="mt-6 space-y-4">
-					<a href="index.html" class="block px-4 py-2 text-[#FFF] hover:bg-gray-200/50 rounded-lg dark:text-[#000] transition-all duration-300 ease-in-out">Home</a>
-					<a href="about-us.html" class="block px-4 py-2 text-[#FFF] hover:bg-gray-200/50 rounded-lg dark:text-[#000] transition-all duration-300 ease-in-out">About</a>
-					<a href="ambulance-services.html" class="block px-4 py-2 text-[#FFF] hover:bg-gray-200/50 rounded-lg dark:text-[#000] transition-all duration-300 ease-in-out">Services</a>
-					<a href="blogs.html" class="block px-4 py-2 text-[#FFF] hover:bg-gray-200/50 rounded-lg dark:text-[#000] transition-all duration-300 ease-in-out">Blog</a>
-					<a href="contact.html" class="block px-4 py-2 text-[#FFF] hover:bg-gray-200/50 rounded-lg dark:text-[#000] transition-all duration-300 ease-in-out">Contact</a>
+					<a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">Home</a>
+					<a href="about-us.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">About</a>
+					<a href="ambulance-services.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">Services</a>
+					<a href="blogs.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">Blog</a>
+					<a href="contact.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">Contact</a>
 				</div>
 			</div>
 		</section>
@@ -201,14 +210,14 @@
 		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap">
 				<div class="w-full md:w-[30%] relative overflow-hidden">
-					<div class="flex flex-col items-start justify-center pt-[30px]">
+					<div class="flex flex-col items-start justify-center md:pt-[20px] lg:pt-[30px]">
 
-						<h5 class="text-[#1376F8] font-normal md:text-[18px] text-[15px] md:pb-2 pb-0">WHAT WE PROVIDE</h5>
-						<h2 class="text-[#011632] font-semibold md:text-[35px] text-[20px] leading-none md:leading-8">Our <br class="hidden md:block">
+						<h5 class="font-normal md:text-[18px] lg:text-[20px] text-[#1376F8] pb-2 text-[18px]">WHAT WE PROVIDE</h5>
+						<h2 class="text-[#011632] font-semibold md:text-[30px] lg:text-[35px] text-[25px] lg:pb-5 md:pb-3 pb-3 md:leading-8 leading-none">Our <br class="hidden md:block">
 							Medical <br class="hidden md:block">
 							Services</h2>
 						<p class="pb-2 text-[#515151] font-normal md:text-[16px] text-[14px] leading-tight md:leading-none">
-							Molestiae non recusandae earum<br class="hidden md:block">
+							Molestiae non recusandae earum<br class="hidden md:hidden lg:block">
 							rerum hic tenetur asa
 							piente delectus.
 						</p>
@@ -220,12 +229,12 @@
 
 				<div class="w-full md:w-[70%]">
 					<div class="relative">
-						<img src="assets/img/pro-img.png" alt="Diagnostic" class="w-full h-64 md:h-auto">
+						<img src="assets/img/pro-img.png" alt="Diagnostic" class="w-full h-44 md:h-[15rem] lg:h-auto">
 						<div class="absolute top-0 left-0 w-full h-full text-white flex items-center justify-start md:p-4 p-0">
-						  <div class="text-left p-2">
-							<h3 class="md:text-[25px] text-[15px] md:font-bold font-normal text-[#000] pb-3">We Provide <br class="md:block">Best Medical <br class="hidden md:block">Treatment</h3>
-							<p class="md:mt-2 mt-0 text-[#515151] font-normal md:pb-3 pb-2">A placeholder text commonly<br class="md:block"> used to demonstrate the<br class="md:hidden"> visual<br class="hidden md:block"> form of a document....</p>
-							<a href="" class="flex md:justify-between"><p class="text-[#1376F8] font-bold text-[18px] pr-2">Book An Appointment </p><img src="assets/img/a-arrow.png" alt="" class="w-6 h-6"></a>
+						  <div class="text-left p-4">
+							<h3 class="md:text-[25px] text-[15px] font-bold text-[#000] pb-3 md:leading-tight leading-none lg:leading-none">We Provide <br class="hidden md:hidden lg:block">Best Medical <br class="hidden md:block">Treatment</h3>
+							<p class="md:mt-0 lg:mt-2 mt-0 text-[#515151] font-normal md:pb-3 pb-2">A placeholder text commonly<br class="hidden md:hidden lg:block"> used to demonstrate the visual<br class="hidden md:hidden lg:block"> form of a document....</p>
+							<a href="" class="flex lg:justify-between"><p class="text-[#1376F8] font-bold text-[18px] pr-2">Book An Appointment </p><img src="assets/img/a-arrow.png" alt="" class="w-6 h-6"></a>
 						  </div>
 						</div>
 					</div>					  
@@ -241,7 +250,7 @@
 					  <ul class="splide__list">
 						  <li class="splide__slide">
 							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
-								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								<div class="flex flex-col items-center md:items-center lg:items-start justify-center md:py-6 py-0">
 								  <img src="assets/img/labtest.png" alt="" class="w-16 h-16">
 								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Diagnostic</h4>
 								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
@@ -253,7 +262,7 @@
 						  </li>
 						  <li class="splide__slide">
 							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
-								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								<div class="flex flex-col items-center md:items-center lg:items-start justify-center md:py-6 py-0">
 								  <img src="assets/img/ambulance2.png" alt="" class="w-16 h-16">
 								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Medicine Delivery</h4>
 								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
@@ -265,7 +274,7 @@
 						  </li>
 						  <li class="splide__slide">
 							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300">
-								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								<div class="flex flex-col items-center md:items-center lg:items-start justify-center md:py-6 py-0">
 								  <img src="assets/img/doctor-icon.png" alt="" class="w-16 h-16">
 								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Doctor Consultation</h4>
 								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
@@ -277,7 +286,7 @@
 						  </li>
 						  <li class="splide__slide">
 							<div class="w-full bg-[#F5F5F5] border border-[#FFF] hover:border-[#1376F8] hover:bg-[#FFF] rounded-lg p-4 transition-all duration-300 ease-in-out">
-								<div class="flex flex-col items-center md:items-start justify-center md:py-6 py-0">
+								<div class="flex flex-col items-center md:items-center lg:items-start justify-center md:py-6 py-0">
 								  <img src="assets/img/ambulance-1.png" alt="" class="w-16 h-16">
 								  <h4 class="text-[#011632] font-semibold md:text-[18px] text-[15px] pb-2">Pincodewise Ambulance</h4>
 								  <p class="text-[#515151] font-normal md:text-[16px] text-[12px] leading-tight pb-2 text-left">
@@ -296,35 +305,35 @@
 
 	<section class="bg-[#FFF] py-[20px]">
 		<div class="flex flex-wrap">
-			<div class="w-full md:w-[50%] bg-[#011632] md:pl-[80px] pl-4 py-[50px]">
-				<h4 class="font-normal md:text-[20px] text-[#FFF] pb-2 text-[18px]">WHY CHOOSE US</h4>
-				<h2 class="text-[#00FFCC] font-semibold md:text-[35px] text-[25px] md:pb-5 pb-3">Choose The Best For Your<br class="hidden md:block"> Health</h2>
+			<div class="w-full md:w-[50%] bg-[#011632] md:pl-4 lg:pl-[80px] pl-4 lg:py-[50px] md:py-4 py-[50px]">
+				<h4 class="font-normal md:text-[18px] lg:text-[20px] text-[#1376F8] md:pb-0 pb-2 lg:pb-2 text-[18px]">WHY CHOOSE US</h4>
+				<h2 class="text-[#00FFCC] font-semibold md:text-[25px] lg:text-[35px] text-[25px] md:pb-5 pb-3 md:leading-tight lg:leading-none leading-none">Choose The Best For Your<br class="hidden md:block"> Health</h2>
 				<div>
 					<div class="flex items-center pb-3">
-						<img src="assets/img/female.png" alt="" class="me-3 md:w-16 w-8 md:h-16 h-8">
+						<img src="assets/img/female.png" alt="" class="me-3 lg:w-16 md:w-8 w-8 lg:h-16 md:h-8 h-8">
 						<div>
-							<h4 class="text-[#FFF] font-normal md:text-[25px] text-[20px]">Professional Staff</h4>
-                            <p class="text-[#FFF] font-normal md:text-[15px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
+							<h4 class="text-[#FFF] font-normal lg:text-[25px] md:text-[20px] text-[20px]">Professional Staff</h4>
+                            <p class="text-[#FFF] font-normal lg:text-[15px] md:text-[13px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
 						</div>
 					</div>
 					<div class="flex items-center pb-3">
-						<img src="assets/img/Out-Patient-Department.png" alt="" class="me-3 md:w-16 w-8 md:h-16 h-8">
+						<img src="assets/img/Out-Patient-Department.png" alt="" class="me-3 lg:w-16 md:w-8 w-8 lg:h-16 md:h-8 h-8">
 						<div>
-							<h4 class="text-[#FFF] font-normal md:text-[25px] text-[20px]">Online Appointment</h4>
-                            <p class="text-[#FFF] font-normal md:text-[15px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
+							<h4 class="text-[#FFF] font-normal lg:text-[25px] md:text-[20px] text-[20px]">Online Appointment</h4>
+                            <p class="text-[#FFF] font-normal lg:text-[15px] md:text-[13px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
 						</div>
 					</div>
 					<div class="flex items-center">
-						<img src="assets/img/Medical-Bag.png" alt="" class="me-3 md:w-16 w-8 md:h-16 h-8">
+						<img src="assets/img/Medical-Bag.png" alt="" class="me-3 lg:w-16 md:w-8 w-8 lg:h-16 md:h-8 h-8">
 						<div>
-							<h4 class="text-[#FFF] font-normal md:text-[25px] text-[20px]">Emergency Case</h4>
-                            <p class="text-[#FFF] font-normal md:text-[15px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
+							<h4 class="text-[#FFF] font-normal lg:text-[25px] md:text-[20px] text-[20px]">Emergency Case</h4>
+                            <p class="text-[#FFF] font-normal lg:text-[15px] md:text-[13px] text-[13px] leading-tight">Amet minim mollit non deserunt aliqua<br> dolor do amet sint.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="w-full md:w-[50%]">
-				<img src="assets/img/doctor-consult.png" alt="" class="w-full h-auto">
+				<img src="assets/img/doctor-consult.png" alt="" class="w-full lg:h-auto h-auto md:h-[22.5rem]">
 			</div>
 		</div>
 	</section>
@@ -339,7 +348,7 @@
 			<!-- Right Side with FAQ -->
 			<div class="w-full md:w-[50%] bg-[url(./assets/img/faq-bg-2.png)] bg-cover p-6">
 				<p class="text-white font-normal text-[18px]">FAQS</p>
-				<h2 class="text-[20px] font-bold text-white md:text-[37px] mb-6">
+				<h2 class="text-[20px] font-bold text-white md:text-[37px] mb-6 md:leading-tight leading-none lg:leading-none">
 					Frequently Asked <br class="hidden md:block"> Questions?
 				</h2>
 	
@@ -349,7 +358,7 @@
 					<div class="bg-white text-black rounded-lg shadow-lg">
 						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
 							<span class="text-sm lg:text-lg font-medium">01. What services does Deys Medicare offer?</span>
-							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:w-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
 						</button>
 						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
 							Deys Medicare is strategically located for easy access, ensuring that you can reach us conveniently from various parts of the community.
@@ -360,7 +369,7 @@
 					<div class="bg-white text-black rounded-lg shadow-lg">
 						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
 							<span class="text-sm lg:text-lg font-medium">02. How do I schedule an appointment?</span>
-							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:w-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
 						</button>
 						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
 							You can schedule an appointment via our website, phone call, or by visiting our clinic directly.
@@ -371,7 +380,7 @@
 					<div class="bg-white text-black rounded-lg shadow-lg">
 						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
 							<span class="text-sm lg:text-lg font-medium">03. What are the clinic hours of operation?</span>
-							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:w-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
 						</button>
 						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
 							Our clinic is open Monday to Friday from 9 AM to 6 PM and on Saturdays from 10 AM to 4 PM.
@@ -385,32 +394,32 @@
 
 
 	<section class="bg-[url('./assets/img/mask-bg.png')] bg-cover bg-center py-[20px]">
-		<div class="container mx-auto">
+		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap justify-between text-center text-white gap-y-3">
 				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
 					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">69k+</h3>
-					<p class="text-sm md:text-lg text-[#FFF]">Satisfied<br class="md:hidden"> Patients</p>
+					<p class="text-[12px] md:text-lg text-[#FFF]">Satisfied<br class="md:hidden"> Patients</p>
 				</div>
 
 				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px] hidden md:block"></div>
 	
 				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
 					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">236+</h3>
-					<p class="text-sm md:text-lg text-[#FFF]">Medicine<br class="md:hidden"> Delivery</p>
+					<p class="text-[12px] md:text-lg text-[#FFF]">Medicine<br class="md:hidden"> Delivery</p>
 				</div>
 
 				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px] hidden md:block"></div>
 	
 				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
 					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">42+</h3>
-					<p class="text-sm md:text-lg text-[#FFF]">Years of Experience</p>
+					<p class="text-[12px] md:text-lg text-[#FFF]">Years of Experience</p>
 				</div>
 
 				<div class="w-[2px] h-[100px] bg-[#FFF] mt-[7px] hidden md:block"></div>
 	
 				<div class="w-[25%] md:w-[20%] md:p-4 p-0 md:text-left text-center">
 					<h3 class="text-lg md:text-3xl font-normal md:font-bold lg:font-bold text-[#FFF]">320+</h3>
-					<p class="text-sm md:text-lg text-[#FFF]">Ambulance<br class="md:hidden"> Services</p>
+					<p class="text-[12px] md:text-lg text-[#FFF]">Ambulance<br class="md:hidden"> Services</p>
 				</div>
 			</div>
 		</div>
@@ -544,14 +553,14 @@
 					<!-- Spacer for large screens -->
 					<div class="hidden md:block md:w-1/12"></div>
 					<div class="w-full md:w-10/12">
-						<div class="bg-cover bg-center bg-no-repeat h-40 md:h-80 lg:h-96 flex flex-col justify-center items-start p-6 md:p-10 lg:p-16 rounded-xl"
+						<div class="bg-cover bg-center bg-no-repeat h-40 md:h-55 lg:h-96 flex flex-col justify-center items-start p-6 md:p-10 lg:p-16 rounded-xl"
 							style="background-image: url('assets/img/last-img.png');">
-							<p class="text-white text-[15px] md:text-[16px] lg:text-[16px]">GET IN TOUCH</p>
-							<p class="text-white text-[20px] md:text-[30px] lg:text-[40px] font-bold md:mt-2 mt-0 leading-tight md:leading-none">
+							<p class="text-white text-[15px] md:text-[15px] lg:text-[16px]">GET IN TOUCH</p>
+							<p class="text-white text-[20px] md:text-[25px] lg:text-[40px] font-bold md:mt-2 mt-0 leading-tight md:leading-none lg:pb-2">
 								Provide The Best<br class="hidden md:block"> Medical Service for You!
 							</p>
 							<button
-  							class="bg-white text-[#1376F8] font-semibold text-sm md:text-base py-2 px-4 md:py-3 md:px-6 rounded-lg mt-4 
+  							class="bg-white text-[#1376F8] font-semibold text-sm md:text-[15px] lg:py-3 lg:px-6 md:py-2 md:px-4 rounded-lg mt-4 
          							transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#1376F8] hover:text-white hover:shadow-lg">
   							Contact Us
 							</button>
@@ -569,25 +578,31 @@
 			<div class="flex flex-wrap">
 				<!-- Left Column -->
 				<div class="w-full lg:w-5/12 md:w-5/12">
-					<div class="mb-8">
-						<img src="assets/img/footer-img.png" alt="Footer Logo" class="w-48">
-						<p class="text-gray-300 mt-4">
+					<div class="md:mb-8 mb-4">
+						<img src="assets/img/footer-img.png" alt="Footer Logo" class="w-32 md:w-40 lg:w-48">
+						<p class="text-gray-300 md:mt-4 mt-0">
 							Deys Medicare serves as your trusted gateway to comprehensive healthcare solutions,
 							delivering an array of services tailored to meet your health needs.
 						</p>
 					</div>
 					<div class="flex gap-3 lg:gap-4 mb-2 lg:mb-0">
-						<a href="#" target="_blank"><img src="assets/img/fb.png" alt="Facebook"
-								class="w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-1"></a>
-						<a href="#" target="_blank"><img src="assets/img/wp.png" alt="WhatsApp"
-								class="w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-1"></a>
-						<a href="#" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"
-								class="w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-1"></a>
-						<a href="#" target="_blank"><img src="assets/img/in.png" alt="LinkedIn"
-								class="w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-1"></a>
-						<a href="#" target="_blank"><img src="assets/img/youtube.png" alt="YouTube"
-								class="w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-1"></a>
+						<a href="#" target="_blank">
+							<i class="fab fa-facebook-f w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-3 flex items-center justify-center text-xl transition-all duration-300 hover:bg-blue-500 hover:text-white"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fab fa-whatsapp w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-3 flex items-center justify-center text-xl transition-all duration-300 hover:bg-green-500 hover:text-white"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fab fa-twitter w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-3 flex items-center justify-center text-xl transition-all duration-300 hover:bg-blue-400 hover:text-white"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fab fa-linkedin-in w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-3 flex items-center justify-center text-xl transition-all duration-300 hover:bg-blue-700 hover:text-white"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fab fa-youtube w-12 h-12 border border-gray-300 rounded-full bg-blue-300 p-3 flex items-center justify-center text-xl transition-all duration-300 hover:bg-red-600 hover:text-white"></i>
+						</a>
 					</div>
+					
 				</div>
 
 				<!-- Spacer for large screens -->
@@ -596,37 +611,85 @@
 				<!-- Middle Column -->
 				<div class="w-full lg:w-3/12 md:w-3/12">
 					<div class="mb-8">
-						<h4 class="font-semibold text-lg">Company</h4>
-						<div class="bg-white h-1 w-16 mt-2"></div>
+						<h4 class="font-semibold text-lg text-white">Company</h4>
+						<div class="relative w-16 h-1 mt-2 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full">
+							<div class="absolute top-0 left-0 w-4 h-1 bg-white rounded-full animate-ping"></div>
+						</div>
 						<ul class="mt-4 space-y-2">
-							<li><a href="#" class="hover:text-gray-300">About</a></li>
-							<li><a href="#" class="hover:text-gray-300">Services</a></li>
-							<li><a href="#" class="hover:text-gray-300">Blog</a></li>
-							<li><a href="#" class="hover:text-gray-300">Testimonial</a></li>
-							<li><a href="#" class="hover:text-gray-300">Contact</a></li>
+							<li>
+								<a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-all duration-300 ease-in-out">
+									<svg class="w-4 h-4 text-blue-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+									</svg>
+									About
+								</a>
+							</li>
+							<li>
+								<a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-all duration-300 ease-in-out">
+									<svg class="w-4 h-4 text-blue-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+									</svg>
+									Services
+								</a>
+							</li>
+							<li>
+								<a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-all duration-300 ease-in-out">
+									<svg class="w-4 h-4 text-blue-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+									</svg>
+									Blog
+								</a>
+							</li>
+							<li>
+								<a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-all duration-300 ease-in-out">
+									<svg class="w-4 h-4 text-blue-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+									</svg>
+									Testimonial
+								</a>
+							</li>
+							<li>
+								<a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-all duration-300 ease-in-out">
+									<svg class="w-4 h-4 text-blue-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+									</svg>
+									Contact
+								</a>
+							</li>
 						</ul>
 					</div>
-				</div>
+				</div>				
 
 				<!-- Right Column -->
 				<div class="w-full lg:w-3/12 md:w-3/12">
 					<div>
-						<h4 class="font-semibold text-lg">Contact Us</h4>
-						<div class="bg-white h-1 w-16 mt-2"></div>
+						<h4 class="font-semibold text-lg text-white">Contact Us</h4>
+						<div class="relative w-16 h-1 mt-2 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full">
+							<div class="absolute top-0 left-0 w-4 h-1 bg-white rounded-full animate-ping"></div>
+						</div>
+						
 						<div class="mt-4 flex items-start space-x-3">
 							<img src="assets/img/location1.png" alt="Location" class="w-10 h-10">
-							<p class="text-gray-300 mt-2">121 King Street Melbourne, 3000, Australia</p>
+							<a href="https://maps.google.com/?q=121+King+Street+Melbourne" target="_blank" class="text-gray-300 mt-2 hover:text-blue-400">
+								121 King Street Melbourne, 3000, Australia
+							</a>
 						</div>
+				
 						<div class="mt-2 flex items-start space-x-3">
 							<img src="assets/img/mail1.png" alt="Email" class="w-10 h-10">
-							<p class="text-gray-300 mt-2">info@deysmedicare.com</p>
+							<a href="mailto:info@deysmedicare.com" class="text-gray-300 mt-2 hover:text-blue-400">
+								info@deysmedicare.com
+							</a>
 						</div>
+				
 						<div class="mt-2 flex items-start space-x-3">
 							<img src="assets/img/call1.png" alt="Phone" class="w-10 h-10">
-							<p class="text-gray-300 mt-2">+61 123 456 789</p>
+							<a href="tel:+61123456789" class="text-gray-300 mt-2 hover:text-blue-400">
+								+61 123 456 789
+							</a>
 						</div>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</div>
 		<hr class="border-gray-400 my-4">
