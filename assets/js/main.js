@@ -341,6 +341,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#treatment", {
+    type: "loop",
+    arrows: true,
+    gap: 10,
+    perPage: 6,
+    pagination: false,
+    focus: "start",
+    autoplay: false,
+    speed: 800,
+    interval: 3000, 
+    rewind: true,
+    rewindSpeed: 500,
+    breakpoints: {
+      1024: { perPage: 5 },
+      768: { perPage: 4, gap: 10 },
+      400: { perPage: 3, gap: 10 },
+    },
+  }).mount();
+});
+
 document.querySelectorAll('.faq-toggle').forEach(button => {
   button.addEventListener('click', () => {
       const content = button.nextElementSibling;

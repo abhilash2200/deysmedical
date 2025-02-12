@@ -106,64 +106,23 @@
         </div>
     </section>
 
-    <div class="scrolling-text-container">
-        <div class="scrolling-text-inner" style="--marquee-speed: 30s; --direction:scroll-left" role="marquee">
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <!-- Add More Items Here -->
-            </div>
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <!-- Add More Items Here -->
-            </div>
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <!-- Add More Items Here -->
-            </div>
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <!-- Add More Items Here -->
-            </div>
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <!-- Add More Items Here -->
-            </div>
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <div class="scrolling-text-item">
-                    <p id="white">Call us for any emergency cases : 1-300-400-8211</p>
-                </div>
-                <!-- Add More Items Here -->
-            </div>
-        </div>
-    </div>
+    <section class="bg-[#FF5858] text-[#FFF] overflow-hidden whitespace-nowrap py-2">
+		<div class="flex animate-marquee space-x-10">
+			<p class="text-lg font-semibold text-[#FFF]">
+				Call us for any emergency cases : 1-300-400-8211
+			</p>
+			<p class="text-lg font-semibold text-[#FFF]">
+				Call us for any emergency cases : 1-300-400-8211
+			</p>
+			<p class="text-lg font-semibold text-[#FFF]">
+				Call us for any emergency cases : 1-300-400-8211
+			</p>
+			<p class="text-lg font-semibold text-[#FFF]">
+				Call us for any emergency cases : 1-300-400-8211
+			</p>
+		</div>
+	</section>
+
     <header class="w-full z-40">
 		<section class="container mx-auto px-6 md:pr-[5rem] lg:pr-[8rem] pr-[1rem]">
 			<div class="flex justify-between">
@@ -253,318 +212,287 @@
     </div>
     </section>
 
-    <section class="bg-white py-10">
-    <div class="container mx-auto lg:px-4">
-        <!-- Navigation Tabs -->
-        <div class="mx-4 lg:mx-[200px] flex flex-wrap justify-center md:justify-between gap-4 mb-8 relative">
-            <!-- Dropdowns -->
-            <div class="relative w-[30%] lg:w-[20%]">
-                <button onclick="toggleDropdown('privateDropdown')" 
-                    class="bg-[#1376F8] flex items-center justify-center gap-2 text-xl lg:text-2xl w-full text-white py-3 px-6 rounded-md font-medium focus:outline-none">
-                    Private <span>▼</span>
-                </button>
-                <div id="privateDropdown"
-                    class="absolute hidden bg-[#EFEFEF] border rounded-md shadow-lg mt-2 py-2 w-40">
-                    <a href="#" class="block px-4 py-2 text-gray-700">Online</a>
-                    <a href="#" class="block px-4 py-2 text-gray-700">Physical treatment</a>
-                </div>
-            </div>
-            
-            <div class="relative w-[30%] lg:w-[20%]">
-                <button onclick="toggleDropdown('govtDropdown')"
-                    class="bg-[#1376F8] flex items-center justify-center gap-2 text-xl lg:text-2xl w-full text-white py-3 px-6 rounded-md font-medium focus:outline-none">
-                    Govt. <span>▼</span>
-                </button>
-                <div id="govtDropdown"
-                    class="absolute hidden bg-[#EFEFEF] border rounded-md shadow-lg mt-2 py-2 w-40">
-                    <a href="#" class="block px-4 py-2 text-gray-700">Govt Option 1</a>
-                    <a href="#" class="block px-4 py-2 text-gray-700">Govt Option 2</a>
-                </div>
-            </div>
-            
-            <div class="relative w-[30%] lg:w-[20%]">
-                <button onclick="toggleDropdown('othersDropdown')"
-                    class="bg-[#1376F8] flex items-center justify-center gap-2 text-xl lg:text-2xl w-full text-white py-3 px-6 rounded-md font-medium focus:outline-none">
-                    Others <span>▼</span>
-                </button>
-                <div id="othersDropdown"
-                    class="absolute hidden bg-[#EFEFEF] border rounded-md shadow-lg mt-2 py-2 w-40">
-                    <a href="#" class="block px-4 py-2 text-gray-700">Other Option 1</a>
-                    <a href="#" class="block px-4 py-2 text-gray-700">Other Option 2</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content Section -->
-        <div class="flex flex-wrap items-center justify-between bg-[#E1EEFF] py-6 lg:py-16 rounded-md px-6 gap-y-4">
-            <!-- Text Content -->
-            <div class="w-full lg:w-1/2 text-center md:text-left px-4">
-                <p class="text-black text-xl lg:text-2xl font-semibold">Consult Specialist Doctors Online</p>
-                <p class="text-black text-xl lg:text-2xl font-semibold">on Video/Audio Call & Chat</p>
-                <p class="text-black text-xl lg:text-2xl font-semibold">Consult Doctors from Top Hospitals within 30 minutes</p>
-                <div class="flex justify-center md:justify-start">
-                    <button class="bg-[#3E9B8D] text-white mt-4 py-2 px-6 rounded-md hover:bg-green-600">
-                        Talk to doctor
-                    </button>
-                </div>
-            </div>
-
-            <!-- Image -->
-            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end px-4">
-                <img src="assets/img/Untitled-17.webp" alt="Doctor Consultation" class="w-full md:w-[80%] max-w-[400px]">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <section class="bg-white">
+    <section class="bg-white py-20 relative z-16">
         <div class="container mx-auto lg:px-4">
-            <h1 class="text-2xl">Physical Treatment</h1>
-            <div class="relative mt-3">
-                <!-- Left Arrow -->
-                <button id="prevButton"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 p-2 rounded-full hover:bg-gray-400">
-                    <img src="assets/img/arrow.png" alt="Left Arrow" class="w-3 h-3">
-                </button>
-
-                <!-- Scrollable Container -->
-                <div id="slider" class="flex overflow-x-scroll scroll-smooth gap-3 no-scrollbar">
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/muscle-cramps.png" alt="">
-                        <p>Muscle cramps</p>
-                    </div>
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/Fracture.png" alt="">
-                        <p>Bone Fracture</p>
-                    </div>
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/Injury.png" alt="">
-                        <p>Bleeds & Cuts</p>
-                    </div>
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/Bandage.png" alt="">
-                        <p>Wounds & Burns</p>
-                    </div>
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/Bandage.png" alt="">
-                        <p>Wounds & Burns</p>
-                    </div>
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/Bandage.png" alt="">
-                        <p>Wounds & Burns</p>
-                    </div>
-                    <div
-                        class="flex border-2 border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] items-center justify-center gap-2 p-3">
-                        <img src="assets/img/Bandage.png" alt="">
-                        <p>Wounds & Burns</p>
+            <div class="mx-4 lg:mx-[200px] flex flex-wrap justify-center md:justify-between gap-4 mb-8 relative z-10">
+                
+                <!-- Dropdown Component -->
+                <div class="relative w-[30%] lg:w-[20%]">
+                    <button onclick="toggleDropdown('privateDropdown')" 
+                        class="bg-[#1376F8] flex items-center justify-center gap-2 text-xl lg:text-2xl w-full text-white py-3 px-6 rounded-lg font-medium focus:outline-none transition-all duration-300 hover:bg-[#0F5EC7]">
+                        Private
+                        <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+    
+                    <div id="privateDropdown" 
+                        class="dropdown-menu hidden absolute bg-white border border-gray-300 rounded-lg shadow-lg mt-2 py-2 w-48 transition-all duration-300 top-[100%] z-50">
+                        
+                        <!-- Online Option with Nested Dropdown -->
+                        <div class="relative">
+                            <button onclick="toggleDropdown('onlineDropdown')" 
+                                class="flex justify-between items-center w-full px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">
+                                Online
+                                <svg class="w-4 h-4 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div id="onlineDropdown" 
+                                class="dropdown-menu hidden absolute left-full top-0 bg-white border border-gray-300 rounded-lg shadow-lg w-40 transition-all duration-300 z-50">
+                                <a href="#" class="block px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">Video Call</a>
+                                <a href="#" class="block px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">Audio Call</a>
+                                <a href="#" class="block px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">Chat</a>
+                            </div>
+                        </div>
+    
+                        <!-- Physical Treatment Option with Nested Dropdown -->
+                        <div class="relative">
+                            <button onclick="toggleDropdown('physicalDropdown')" 
+                                class="flex justify-between items-center w-full px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">
+                                Physical Treatment
+                                <svg class="w-4 h-4 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div id="physicalDropdown" 
+                                class="dropdown-menu hidden absolute left-full top-0 bg-white border border-gray-300 rounded-lg shadow-lg w-40 transition-all duration-300 z-50">
+                                <a href="#" class="block px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">Hospital Visit</a>
+                                <a href="#" class="block px-4 py-3 text-gray-700 bg-white hover:bg-blue-100">Home Visit</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Right Arrow -->
-                <button id="nextButton"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 p-2 rounded-full hover:bg-gray-400">
-                    <img src="assets/img/arrow.png" alt="Right Arrow" class="w-3 h-3">
-                </button>
+    
+                <!-- Govt Dropdown -->
+                <div class="relative w-[30%] lg:w-[20%]">
+                    <button onclick="toggleDropdown('govtDropdown')"
+                        class="bg-[#1376F8] flex items-center justify-center gap-2 text-xl lg:text-2xl w-full text-white py-3 px-6 rounded-lg font-medium focus:outline-none transition-all duration-300 hover:bg-[#0F5EC7]">
+                        Govt.
+                        <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="govtDropdown" 
+                        class="dropdown-menu hidden absolute bg-white border border-gray-300 rounded-lg shadow-lg mt-2 py-2 w-48 transition-all duration-300 top-[100%] z-50">
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-100">Govt Option 1</a>
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-100">Govt Option 2</a>
+                    </div>
+                </div>
+    
+                <!-- Others Dropdown -->
+                <div class="relative w-[30%] lg:w-[20%]">
+                    <button onclick="toggleDropdown('othersDropdown')"
+                        class="bg-[#1376F8] flex items-center justify-center gap-2 text-xl lg:text-2xl w-full text-white py-3 px-6 rounded-lg font-medium focus:outline-none transition-all duration-300 hover:bg-[#0F5EC7]">
+                        Others
+                        <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="othersDropdown" 
+                        class="dropdown-menu hidden absolute bg-white border border-gray-300 rounded-lg shadow-lg mt-2 py-2 w-48 transition-all duration-300 top-[100%] z-50">
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-100">Other Option 1</a>
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-100">Other Option 2</a>
+                    </div>
+                </div>
+    
             </div>
         </div>
-        <div class="mx-[10px] lg:mx-[250px] mt-[20px] lg:mt-[60px]">
-            <img src="assets/img/modiji.webp" alt="">
+    </section>
+
+    <section class="bg-[#E1EEFF]">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center justify-between">
+                <div class="w-full md:w-[60%] lg:w-[70%] space-y-4 pl-5">
+                    <p class="text-lg md:text-xl font-semibold text-gray-800 leading-relaxed pb-3">
+                        Consult Specialist Doctors Online<br> on Video/Audio Call & Chat.<br>  
+                        Consult Doctors from Top Hospitals within 30 minutes.
+                    </p>
+                    <div>
+                        <a href="#" class="bg-[#3E9B8D] text-white px-5 py-3 rounded-lg font-medium 
+                        hover:bg-[#317E71] transition-all duration-300 shadow-md">
+                            Talk to Doctor
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-[20%]">
+                    <img src="assets/img/doctor.webp" alt="" class="w-[60%] h-66 -mt-20 relative">
+                </div>
+            </div>
         </div>
     </section>
 
 
+    <section class="bg-white py-10">
+        <div class="container mx-auto px-6">
+            <!-- Heading -->
+            <h1 class="text-2xl font-semibold pb-5 text-gray-800">Physical Treatment</h1>
+    
+            <!-- Splide Slider -->
+            <section class="splide" id="treatment" aria-label="Physical Treatment Slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="flex border border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] 
+                                items-center justify-center gap-3 p-4 shadow-md bg-white hover:shadow-lg transition-all">
+                                <img src="assets/img/muscle-cramps.png" alt="Muscle cramps" class="w-12 h-12">
+                                <p class="text-gray-700 font-medium">Muscle cramps</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="flex border border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] 
+                                items-center justify-center gap-3 p-4 shadow-md bg-white hover:shadow-lg transition-all">
+                                <img src="assets/img/Fracture.png" alt="Bone Fracture" class="w-12 h-12">
+                                <p class="text-gray-700 font-medium">Bone Fracture</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="flex border border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] 
+                                items-center justify-center gap-3 p-4 shadow-md bg-white hover:shadow-lg transition-all">
+                                <img src="assets/img/Bandage.png" alt="Wounds & Burns" class="w-12 h-12">
+                                <p class="text-gray-700 font-medium">Wounds & Burns</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="flex border border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] 
+                                items-center justify-center gap-3 p-4 shadow-md bg-white hover:shadow-lg transition-all">
+                                <img src="assets/img/muscle-cramps.png" alt="Muscle cramps" class="w-12 h-12">
+                                <p class="text-gray-700 font-medium">Muscle cramps</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="flex border border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] 
+                                items-center justify-center gap-3 p-4 shadow-md bg-white hover:shadow-lg transition-all">
+                                <img src="assets/img/Bandage.png" alt="Wounds & Burns" class="w-12 h-12">
+                                <p class="text-gray-700 font-medium">Wounds & Burns</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="flex border border-gray-300 rounded-lg min-w-[47%] lg:min-w-[18%] 
+                                items-center justify-center gap-3 p-4 shadow-md bg-white hover:shadow-lg transition-all">
+                                <img src="assets/img/muscle-cramps.png" alt="Muscle cramps" class="w-12 h-12">
+                                <p class="text-gray-700 font-medium">Muscle cramps</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Image Section -->
+            <div class="mx-auto mt-10 lg:mt-16 flex justify-center">
+                <img src="assets/img/modiji.webp" alt="Modiji" class="max-w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+    
 
 
-    <section class="bg-white px-[5px] lg:px-[60px] py-[5px] lg:py-[40px] text-center">
+
+
+
+
+
+    <section class="bg-white px-4 lg:px-16 py-6 lg:py-16 text-center">
         <div class="bg-contain bg-no-repeat bg-left-top" style="background-image: url('assets/img/spiral-left.png');">
             <div class="py-12">
-                <div class="container">
+                <div class="container mx-auto">
                     <!-- Section Title -->
-                    <h4 class="text-[#1376F8] text-lg font-bold mb-2">WORK PROCESS</h4>
-                    <h2 class="text-2xl lg:text-5xl font-bold text-black mb-8 text-center">Let’s See How We Work</h2>
+                    <h4 class="text-[#1376F8] text-lg font-bold mb-2 uppercase text-center">Work Process</h4>
+                    <h2 class="text-2xl lg:text-5xl font-bold text-black mb-10 text-center">Let’s See How We Work</h2>
     
                     <!-- Steps -->
-                    <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-8">
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-12">
                         <!-- Step 1 -->
-                        <div class="flex flex-col items-center text-center">
-                            <div class="rounded-full border-1 border-[#1376F8] border-dashed p-2">
-                                <img src="assets/img/work.png" alt="Get Report" class="rounded-full w-40 h-40">
+                        <div class="flex flex-col items-center text-center max-w-[250px]">
+                            <div class="rounded-full border border-[#1376F8] border-dashed p-3">
+                                <img src="assets/img/work.png" alt="Patient Registration" class="rounded-full w-40 h-40">
                             </div>
                             <h3 class="text-xl font-semibold text-[#1376F8] mt-4">Patient Registration</h3>
-                            <p class="text-black mt-2 text-sm">
-                                The first step in our process is to welcome our patients and ensure they have a great
-                                experience.
+                            <p class="text-gray-600 mt-2 text-sm">
+                                The first step in our process is to welcome our patients and ensure they have a great experience.
                             </p>
                         </div>
     
                         <!-- Arrow -->
-                        <div class="hidden md:block text-blue-500 text-2xl -mt-28">
-                            <img src="assets/img/Arrow-blue.png" alt="">
-                        </div>
+                        <img src="assets/img/Arrow-blue.png" alt="Arrow" class="hidden md:block w-10 lg:w-14 -mt-8 md:mt-0">
     
                         <!-- Step 2 -->
-                        <div class="flex flex-col items-center text-center">
-                            <div class="rounded-full border-1 border-[#1376F8] border-dashed p-2">
-                                <img src="assets/img/work.png" alt="Get Report" class="rounded-full w-40 h-40">
+                        <div class="flex flex-col items-center text-center max-w-[250px]">
+                            <div class="rounded-full border border-[#1376F8] border-dashed p-3">
+                                <img src="assets/img/work.png" alt="Check-Ups" class="rounded-full w-40 h-40">
                             </div>
                             <h3 class="text-xl font-semibold text-[#1376F8] mt-4">Check-Ups</h3>
-                            <p class="text-black mt-2 text-sm">
+                            <p class="text-gray-600 mt-2 text-sm">
                                 Once the patient is checked in, healthcare professionals conduct a thorough evaluation.
                             </p>
                         </div>
     
                         <!-- Arrow -->
-                        <div class="hidden md:block text-blue-500 text-2xl -mt-28">
-                            <img src="assets/img/Arrow-blue.png" alt="">
-                        </div>
+                        <img src="assets/img/Arrow-blue.png" alt="Arrow" class="hidden md:block w-10 lg:w-14 -mt-8 md:mt-0">
     
                         <!-- Step 3 -->
-                        <div class="flex flex-col items-center text-center">
-                            <div class="rounded-full border-1 border-[#1376F8] border-dashed p-2">
+                        <div class="flex flex-col items-center text-center max-w-[250px]">
+                            <div class="rounded-full border border-[#1376F8] border-dashed p-3">
                                 <img src="assets/img/work.png" alt="Get Report" class="rounded-full w-40 h-40">
                             </div>
                             <h3 class="text-xl font-semibold text-[#1376F8] mt-4">Get Report</h3>
-                            <p class="text-black mt-2 text-sm">
+                            <p class="text-gray-600 mt-2 text-sm">
                                 Analyzing the result of diagnostic tests and incorporating them into the diagnosis.
                             </p>
                         </div>
     
                         <!-- Arrow -->
-                        <div class="hidden md:block text-blue-500 text-2xl -mt-28">
-                            <img src="assets/img/Arrow-blue.png" alt="">
-                        </div>
+                        <img src="assets/img/Arrow-blue.png" alt="Arrow" class="hidden md:block w-10 lg:w-14 -mt-8 md:mt-0">
     
                         <!-- Step 4 -->
-                        <div class="flex flex-col items-center text-center">
-                            <div class="rounded-full border-1 border-[#1376F8] border-dashed p-2">
+                        <div class="flex flex-col items-center text-center max-w-[250px]">
+                            <div class="rounded-full border border-[#1376F8] border-dashed p-3">
                                 <img src="assets/img/work.png" alt="Ongoing Care" class="rounded-full w-40 h-40">
                             </div>
                             <h3 class="text-xl font-semibold text-[#1376F8] mt-4">Ongoing Care</h3>
-                            <p class="text-black mt-2 text-sm">
-                                Our commitment to our patients extends beyond the initial visit. We ensure continuity of
-                                care.
+                            <p class="text-gray-600 mt-2 text-sm">
+                                Our commitment to our patients extends beyond the initial visit. We ensure continuity of care.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-left px-[5px] lg:px-[60px]">
-                <!-- Section Title -->
+    
+            <!-- FAQ Section -->
+            <div class="mx-auto max-w-3xl px-4 lg:px-16 text-left">
                 <h1 class="text-center text-2xl md:text-4xl font-semibold text-black py-6">F.A.Q</h1>
     
-                <!-- Accordion -->
-                <div class="space-y-4 bg-[#CEEAE7] w-[100%] lg:w-[70%] mx-auto px-[5px] py-[5px] lg:px-[100px] lg:py-[50px]">
-                    <!-- First Position -->
-                    <div class="bg-white text-black rounded-md">
-                        <div class="flex justify-between">
-                            <div class="w-full px-2 py-3 text-sm lg:text-lg">
-                                01. How do I schedule an online consultation with a doctor?
-                            </div>
-                            <div class="px-2 lg:px-16 py-3 cursor-pointer">
-                                <img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-                                    data-target="telecaller-details1" data-add-src="assets/img/add-circle.png"
-                                    data-minus-src="assets\img\minus-cirlce-green.png">
-                            </div>
-                        </div>
-                        <div id="telecaller-details1" class="bg-white text-black px-4 hidden">
-                            <div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-                                You can schedule an online consultation with a doctor
-                                by downloading and signing up for the
-                                Deys Medicare app.
-                            </div>
+                <div class="bg-[#CEEAE7] w-full rounded-lg p-6 lg:p-10 space-y-4">
+                    <!-- FAQ Item -->
+                    <div class="bg-white text-black rounded-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 lg:px-6 py-4 text-lg font-medium faq-toggle">
+                            01. How do I schedule an online consultation with a doctor?
+                            <img src="assets/img/add-circle.png" alt="Toggle Button" class="faq-icon">
+                        </button>
+                        <div class="hidden px-4 lg:px-6 py-3 text-sm lg:text-lg bg-gray-100 faq-content">
+                            You can schedule an online consultation with a doctor by downloading and signing up for the Deys Medicare app.
                         </div>
                     </div>
     
-                    <!-- Second Position -->
-                    <div class="bg-white text-black rounded-md">
-                        <div class="flex justify-between">
-                            <div class="w-full px-2 lg:px-16 py-3 text-sm lg:text-lg">
-                                02. Can I have an online consultation with my regular doctor?
-                            </div>
-                            <div class="px-2 lg:px-16 py-3 cursor-pointer">
-                                <img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-                                    data-target="telecaller-details2" data-add-src="assets/img/add-circle.png"
-                                    data-minus-src="assets\img\minus-cirlce-green.png">
-                            </div>
-                        </div>
-                        <div id="telecaller-details2" class="bg-white text-black px-4 hidden">
-                            <div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-                                You can schedule an online consultation with a doctor
-                                by downloading and signing up for the
-                                Deys Medicare app.
-                            </div>
+                    <!-- FAQ Item -->
+                    <div class="bg-white text-black rounded-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 lg:px-6 py-4 text-lg font-medium faq-toggle">
+                            02. Can I have an online consultation with my regular doctor?
+                            <img src="assets/img/add-circle.png" alt="Toggle Button" class="faq-icon">
+                        </button>
+                        <div class="hidden px-4 lg:px-6 py-3 text-sm lg:text-lg bg-gray-100 faq-content">
+                            Yes, you can consult your regular doctor online through the Deys Medicare app.
                         </div>
                     </div>
     
-                    <!-- Third Position -->
-                    <div class="bg-white text-black rounded-md">
-                        <div class="flex justify-between">
-                            <div class="w-full px-2 lg:px-16 py-3 text-sm lg:text-lg">
-                                03. Can I receive a diagnosis through an online doctor
-                                consultation?
-                            </div>
-                            <div class="px-2 lg:px-16 py-3 cursor-pointer">
-                                <img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-                                    data-target="telecaller-details3" data-add-src="assets/img/add-circle.png"
-                                    data-minus-src="assets\img\minus-cirlce-green.png">
-                            </div>
-                        </div>
-                        <div id="telecaller-details3" class="bg-white text-black px-4 hidden">
-                            <div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-                                You can schedule an online consultation with a doctor
-                                by downloading and signing up for the
-                                Deys Medicare app.
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Fourth Position -->
-                    <div class="bg-white text-black rounded-md">
-                        <div class="flex justify-between">
-                            <div class="w-full px-2 lg:px-16 py-3 text-sm lg:text-lg">
-                                04. How long does an online consultation typically last?
-                            </div>
-                            <div class="px-2 lg:px-16 py-3 cursor-pointer">
-                                <img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-                                    data-target="telecaller-details4" data-add-src="assets/img/add-circle.png"
-                                    data-minus-src="assets\img\minus-cirlce-green.png">
-                            </div>
-                        </div>
-                        <div id="telecaller-details4" class="bg-white text-black px-4 hidden">
-                            <div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-                                You can schedule an online consultation with a doctor
-                                by downloading and signing up for the
-                                Deys Medicare app.
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Fifth Position -->
-                    <div class="bg-white text-black rounded-md">
-                        <div class="flex justify-between">
-                            <div class="w-full px-2 lg:px-16 py-3 text-sm lg:text-lg">
-                                05. Why choose Deys medicare Premium for an online
-                                doctor consultation?
-                            </div>
-                            <div class="px-2 lg:px-16 py-3 cursor-pointer">
-                                <img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-content"
-                                    data-target="telecaller-details5" data-add-src="assets/img/add-circle.png"
-                                    data-minus-src="assets\img\minus-cirlce-green.png">
-                            </div>
-                        </div>
-                        <div id="telecaller-details5" class="bg-white text-black px-4 hidden">
-                            <div class="w-full px-3 lg:px-16 py-3 text-sm lg:text-lg">
-                                You can schedule an online consultation with a doctor
-                                by downloading and signing up for the
-                                Deys Medicare app.
-                            </div>
+                    <!-- FAQ Item -->
+                    <div class="bg-white text-black rounded-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 lg:px-6 py-4 text-lg font-medium faq-toggle">
+                            03. Can I receive a diagnosis through an online consultation?
+                            <img src="assets/img/add-circle.png" alt="Toggle Button" class="faq-icon">
+                        </button>
+                        <div class="hidden px-4 lg:px-6 py-3 text-sm lg:text-lg bg-gray-100 faq-content">
+                            Yes, doctors can provide a preliminary diagnosis based on your symptoms and test results.
                         </div>
                     </div>
                 </div>
@@ -572,116 +500,58 @@
         </div>
     </section>
 
-    <section class="relative bg-cover h-auto" style="background-image: url('assets/img/black-man.png');">
-        <div
-            class="container ps-[5px] lg:ps-[100px] py-[20px] lg:py-[150px] flex flex-col md:flex-row items-center justify-between">
-            <!-- Enquiry Form -->
-            <div class="bg-[#1376F8] rounded-lg p-12 w-[100%] lg:w-[60%] h-[400px] text-white">
-                <h3 class="text-2xl lg:text-4xl text-bold mb-6">Enquiry Form</h3>
-                <form class="space-y-10">
-                    <div class="flex justify-between gap-4">
-                        <div class="flex-1">
-                            <label class="block text-md font-medium">Your name:</label>
-                            <input type="text"
-                                class="w-full border-b border-white bg-transparent outline-none text-white focus:border-blue-300">
-                        </div>
-                        <div class="flex-1">
-                            <label class="block text-md font-medium">Phone no:</label>
-                            <input type="text"
-                                class="w-full border-b border-white bg-transparent outline-none text-white focus:border-blue-300">
-                        </div>
+    <section class="relative bg-cover bg-center min-h-screen flex items-center justify-center lg:justify-end px-4 lg:px-16"
+    style="background-image: url('assets/img/black-man.png');">
+    <div class="container flex justify-center lg:justify-start w-full max-w-7xl">
+        <!-- Enquiry Form -->
+        <div class="bg-[#1376F8] rounded-lg p-6 md:p-12 w-full sm:w-[90%] md:w-[75%] lg:w-[50%] max-w-[600px] text-white animate-fade-in shadow-lg">
+            <h3 class="text-2xl lg:text-4xl font-bold mb-6 text-center lg:text-left">Enquiry Form</h3>
+            <form class="space-y-6 md:space-y-10">
+                <div class="flex flex-col md:flex-row justify-between gap-4">
+                    <div class="flex-1">
+                        <label class="block text-md font-medium">Your name:</label>
+                        <input type="text"
+                            class="w-full border-b border-white bg-transparent outline-none text-white transition-all duration-300 focus:border-transparent focus:ring-0 placeholder-white">
                     </div>
-                    <div class="flex justify-between gap-4">
-                        <div class="flex-1">
-                            <label class="block text-md font-medium">Your email:</label>
-                            <input type="email"
-                                class="w-full border-b border-white bg-transparent outline-none text-white focus:border-blue-300">
-                        </div>
-                        <div class="flex-1">
-                            <label class="block text-md font-medium">Date:</label>
-                            <input type="date"
-                                class="w-full border-b border-white bg-transparent outline-none text-white focus:border-blue-300">
-                        </div>
+                    <div class="flex-1">
+                        <label class="block text-md font-medium">Phone no:</label>
+                        <input type="text"
+                            class="w-full border-b border-white bg-transparent outline-none text-white transition-all duration-300 focus:border-transparent focus:ring-0 placeholder-white">
                     </div>
-                    <div class="flex justify-center">
-                        <button type="submit"
-                            class="bg-white text-blue-500 font-bold py-2 px-6 rounded-lg mt-2 lg:mt-4">Submit
-                            Now</button>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between gap-4">
+                    <div class="flex-1">
+                        <label class="block text-md font-medium">Your email:</label>
+                        <input type="email"
+                            class="w-full border-b border-white bg-transparent outline-none text-white transition-all duration-300 focus:border-transparent focus:ring-0 placeholder-white">
                     </div>
-                </form>
-            </div>
+                    <div class="flex-1">
+                        <label class="block text-md font-medium">Date:</label>
+                        <input type="date"
+                            class="w-full border-b border-white bg-transparent outline-none text-white transition-all duration-300 focus:border-transparent focus:ring-0">
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class="bg-white text-blue-500 font-bold py-2 px-6 rounded-lg mt-2 lg:mt-4 transition-transform duration-300 hover:scale-105 hover:bg-blue-200">
+                        Submit Now
+                    </button>
+                </div>
+            </form>
         </div>
+    </div>
+</section>
+
+
+
+
+    <section class="flex flex-col items-center justify-center pt-10 text-xl lg:text-4xl space-y-4">
+        <img src="assets/img/Tele.png" alt="Emergency Icon" class="w-20 lg:w-28">
+        <h1 class="font-semibold text-gray-800">FOR EMERGENCY CASES</h1>
+        <h1 class="font-bold text-black-500">1-300-400-8211</h1>
+        <hr class="w-16 lg:w-24 border-2 border-gray-400">
     </section>
-
-
-    <section class="flex flex-col align-items-center pt-10 justify-center text-xl lg:text-4xl space-y-4">
-        <img src="assets/img/Tele.png" alt="">
-        <h1 class="font-semibold">FOR EMERGENCY CASES</h1>
-        <h1 class="font-bold">1-300-400-8211</h1>
-    </section>
-
-
-
-	<section class="bg-[#FFF] py-[20px] mb-[10px]">
-		<div class="container mx-auto px-4">
-			<h5 class="text-[#1376F8] font-normal md:text-[20px] text-[18px]">ARTICLE & TIPS</h5>
-			<p class="text-[#011632] font-medium md:text-[35px] text-[25px] pb-3">Latest News & Blogs</p>
-			<section class="splide" id="tips" aria-label="Splide Basic HTML Example">
-				<div class="splide__track">
-					  <ul class="splide__list">
-						  <li class="splide__slide">
-							<div class="w-full flex flex-col items-center justify-center">
-								<img src="assets/img/blog-img.png" alt="">
-								<div class="bg-[#FFF] mb-[10px] -mt-[100px] rounded-lg custom-box-shadow w-[80%]">
-									<div class="p-4">
-										<span><i class="fa-solid fa-calendar"></i></span>
-										<span class="text-[#1376F8] text-[15px]">2nd Oct,2024 </span>
-										<h6 class="text-[#000] mt-3 text-[18px] leading-tight pb-3">Get the Home care and nursing service </h6>
-										<p class="text-[#515151] font-normal text-[15px] leading-tight pb-3">
-											Debitis aut rerum nec sitatoe bus saerue eveniet...
-										</p>
-										<a href="" class="text-[#1376F8] font-normal text-[15px]">Read More ></a>
-									</div>
-								</div>
-							</div>
-						  </li>
-						  <li class="splide__slide">
-							<div class="w-full flex flex-col items-center justify-center">
-								<img src="assets/img/blog-img.png" alt="">
-								<div class="bg-[#FFF] mb-[10px] -mt-[100px] rounded-lg custom-box-shadow w-[80%]">
-									<div class="p-4">
-										<span><i class="fa-solid fa-calendar"></i></span>
-										<span class="text-[#1376F8] text-[15px]">2nd Oct,2024 </span>
-										<h6 class="text-[#000] mt-3 text-[18px] leading-tight pb-3">Get the Home care and nursing service </h6>
-										<p class="text-[#515151] font-normal text-[15px] leading-tight pb-3">
-											Debitis aut rerum nec sitatoe bus saerue eveniet...
-										</p>
-										<a href="" class="text-[#1376F8] font-normal text-[15px]">Read More ></a>
-									</div>
-								</div>
-							</div>
-						  </li>
-						  <li class="splide__slide">
-							<div class="w-full flex flex-col items-center justify-center">
-								<img src="assets/img/blog-img.png" alt="">
-								<div class="bg-[#FFF] mb-[10px] -mt-[100px] rounded-lg custom-box-shadow w-[80%]">
-									<div class="p-4">
-										<span><i class="fa-solid fa-calendar"></i></span>
-										<span class="text-[#1376F8] text-[15px]">2nd Oct,2024 </span>
-										<h6 class="text-[#000] mt-3 text-[18px] leading-tight pb-3">Get the Home care and nursing service </h6>
-										<p class="text-[#515151] font-normal text-[15px] leading-tight pb-3">
-											Debitis aut rerum nec sitatoe bus saerue eveniet...
-										</p>
-										<a href="" class="text-[#1376F8] font-normal text-[15px]">Read More ></a>
-									</div>
-								</div>
-							</div>
-						  </li>
-					  </ul>
-				</div>
-			  </section>
-		</div>
-	</section>
+    
 
 
 	<section>
@@ -892,65 +762,50 @@
     <script>
         function toggleDropdown(id) {
             const dropdown = document.getElementById(id);
-            dropdown.classList.toggle('hidden');
+            dropdown.classList.toggle("hidden");
+    
+            // Arrow rotate effect
+            const icon = dropdown.previousElementSibling.querySelector("svg");
+            icon.classList.toggle("rotate-180");
         }
-
-        // Close dropdowns when clicking outside
-        window.addEventListener('click', function (e) {
-            const dropdowns = ['privateDropdown', 'govtDropdown', 'othersDropdown'];
-            dropdowns.forEach((id) => {
-                const dropdown = document.getElementById(id);
-                const button = dropdown.previousElementSibling;
-                if (!button.contains(e.target) && !dropdown.contains(e.target)) {
-                    dropdown.classList.add('hidden');
+    
+        document.addEventListener("click", function (event) {
+            const dropdowns = document.querySelectorAll(".dropdown-menu");
+            dropdowns.forEach((dropdown) => {
+                if (!dropdown.contains(event.target) && !dropdown.previousElementSibling.contains(event.target)) {
+                    dropdown.classList.add("hidden");
+                    dropdown.previousElementSibling.querySelector("svg").classList.remove("rotate-180");
                 }
             });
         });
     </script>
-    <script>
-        const slider = document.getElementById('slider');
-        const prevButton = document.getElementById('prevButton');
-        const nextButton = document.getElementById('nextButton');
 
-        // Scroll left
-        prevButton.addEventListener('click', () => {
-            slider.scrollBy({
-                left: -200, // Adjust this value to control the scroll amount
-                behavior: 'smooth',
-            });
-        });
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('.toggle-content').forEach(button => {
+            button.addEventListener('click', function () {
+                let targetId = this.getAttribute('data-target'); // Get target ID
+                let target = document.getElementById(targetId); // Get target div
+                let addSrc = this.getAttribute('data-add-src'); // Plus icon src
+                let minusSrc = this.getAttribute('data-minus-src'); // Minus icon src
 
-        // Scroll right
-        nextButton.addEventListener('click', () => {
-            slider.scrollBy({
-                left: 200, // Adjust this value to control the scroll amount
-                behavior: 'smooth',
-            });
-        });
-    </script>
-    <script>
-        document.querySelectorAll('.toggle-content').forEach((toggle) => {
-            toggle.addEventListener('click', (e) => {
-                const targetId = toggle.getAttribute('data-target');
-                const targetElement = document.getElementById(targetId);
+                if (target) {
+                    target.classList.toggle('hidden'); // Show/Hide content
 
-                const addSrc = toggle.getAttribute('data-add-src');
-                const minusSrc = toggle.getAttribute('data-minus-src');
-
-                if (targetElement) {
-                    // Toggle visibility of the target content
-                    targetElement.classList.toggle('hidden');
-
-                    // Switch image source based on visibility
-                    if (targetElement.classList.contains('hidden')) {
-                        toggle.src = addSrc; // Show add-circle
+                    // Icon Change Logic
+                    if (target.classList.contains('hidden')) {
+                        this.src = addSrc; // Show plus icon
                     } else {
-                        toggle.src = minusSrc; // Show minus-circle
+                        this.src = minusSrc; // Show minus icon
                     }
                 }
             });
         });
-    </script>
+    });
+</script>
+
+
+
 </body>
 
 </html>
