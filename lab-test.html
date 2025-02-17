@@ -116,34 +116,43 @@
 				<div class="flex items-center justify-start">
 					<!-- Logo -->
 					<a href="index.html" id="stickyLogo" class="hidden">
-					<img src="assets/img/logo.png" alt="Logo" class="w-[100px]">
+						<img src="assets/img/logo.png" alt="Logo" class="w-[100px]">
 					</a>
 				</div>
-
-
+	
 				<div class="flex items-center justify-end">
-					<nav class="hidden md:flex items-center gap-6  pr-5">
+					<nav class="hidden md:flex items-center gap-6 pr-5">
 						<a href="about-us.html" class="text-[#FFF]">About Us</a>
-						<a href="ambulance-services.html" class="text-[#FFF]">Services+</a>
+						
+						<!-- Services Dropdown -->
+						<div class="relative">
+							<a href="javascript:void(0);" id="servicesLink" class="text-[#FFF] cursor-pointer">
+								Services<span id="servicesIcon"> +</span>
+							</a>
+							<div id="servicesDropdown" class="absolute hidden bg-black/80 text-white py-4 px-2 rounded-lg w-40 mt-2">
+								<a href="ambulance-services.html" class="cuscolor block py-2 hover:bg-gray-700 rounded text-[15px]">Ambulance</a>
+								<a href="doctors-consultation.html" class="cuscolor block py-2 hover:bg-gray-700 rounded">Doctor Consultant</a>
+								<a href="lab-test.html" class="cuscolor block py-2 hover:bg-gray-700 rounded">Diagnostics</a>
+								<a href="medicine-delivery.html" class="cuscolor block py-2 hover:bg-gray-700 rounded">Medicine Delivery</a>
+								<a href="premium.html" class="cuscolor block py-2 hover:bg-gray-700 rounded">Premium</a>
+							</div>
+						</div>
+						
 						<a href="faq.html" class="text-[#FFF]">FAQ</a>
 						<a href="premium.html" class="text-[#FFF]">Premium</a>			
 					</nav>
-
-					<!-- drawer init and toggle -->
-				<div class="text-center">
-					<button type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
-						<svg class="w-6 h-6 mt-2 customs-text" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-							<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
-						</svg>					  
-					</button>
-				</div>
-			</div>
-		</div>
-			
-			<!-- Navigation Links -->
-			
 	
-			<!-- drawer component -->
+					<!-- drawer init and toggle -->
+					<div class="text-center">
+						<button type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+							<svg class="w-6 h-6 mt-2 customs-text" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+								<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+							</svg>					  
+						</button>
+					</div>
+				</div>
+
+				<!-- drawer component -->
 			<div id="drawer-right-example" class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-black/50 w-80" tabindex="-1" aria-labelledby="drawer-right-label">
 				<!-- Close button -->
 				<button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
@@ -162,6 +171,7 @@
 					<a href="blogs.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">Blog</a>
 					<a href="contact.html" class="block px-4 py-2 text-white hover:bg-gray-700/50 dark:hover:bg-gray-300/50 rounded-lg transition-all">Contact</a>
 				</div>
+			</div>
 			</div>
 		</section>
 	</header>
