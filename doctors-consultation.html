@@ -463,40 +463,40 @@
             <div class="mx-auto max-w-3xl px-4 lg:px-16 text-left">
                 <h1 class="text-center text-2xl md:text-4xl font-semibold text-black py-6">F.A.Q</h1>
     
-                <div class="bg-[#CEEAE7] w-full rounded-lg p-6 lg:p-10 space-y-4">
-                    <!-- FAQ Item -->
-                    <div class="bg-white text-black rounded-md overflow-hidden">
-                        <button class="w-full flex justify-between items-center px-4 lg:px-6 py-4 text-lg font-medium faq-toggle">
-                            01. How do I schedule an online consultation with a doctor?
-                            <img src="assets/img/add-circle.png" alt="Toggle Button" class="faq-icon">
-                        </button>
-                        <div class="hidden px-4 lg:px-6 py-3 text-sm lg:text-lg bg-gray-100 faq-content">
-                            You can schedule an online consultation with a doctor by downloading and signing up for the Deys Medicare app.
-                        </div>
-                    </div>
-    
-                    <!-- FAQ Item -->
-                    <div class="bg-white text-black rounded-md overflow-hidden">
-                        <button class="w-full flex justify-between items-center px-4 lg:px-6 py-4 text-lg font-medium faq-toggle">
-                            02. Can I have an online consultation with my regular doctor?
-                            <img src="assets/img/add-circle.png" alt="Toggle Button" class="faq-icon">
-                        </button>
-                        <div class="hidden px-4 lg:px-6 py-3 text-sm lg:text-lg bg-gray-100 faq-content">
-                            Yes, you can consult your regular doctor online through the Deys Medicare app.
-                        </div>
-                    </div>
-    
-                    <!-- FAQ Item -->
-                    <div class="bg-white text-black rounded-md overflow-hidden">
-                        <button class="w-full flex justify-between items-center px-4 lg:px-6 py-4 text-lg font-medium faq-toggle">
-                            03. Can I receive a diagnosis through an online consultation?
-                            <img src="assets/img/add-circle.png" alt="Toggle Button" class="faq-icon">
-                        </button>
-                        <div class="hidden px-4 lg:px-6 py-3 text-sm lg:text-lg bg-gray-100 faq-content">
-                            Yes, doctors can provide a preliminary diagnosis based on your symptoms and test results.
-                        </div>
-                    </div>
-                </div>
+                <div class="space-y-4 p-10 bg-[#CEEAE7A1] rounded-md">
+					<!-- FAQ Item -->
+					<div class="bg-white text-black rounded-lg shadow-lg">
+						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
+							<span class="text-sm lg:text-lg font-medium">01. What services does Deys Medicare offer?</span>
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+						</button>
+						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
+							Deys Medicare is strategically located for easy access, ensuring that you can reach us conveniently from various parts of the community.
+						</div>
+					</div>
+	
+					<!-- FAQ Item -->
+					<div class="bg-white text-black rounded-lg shadow-lg">
+						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
+							<span class="text-sm lg:text-lg font-medium">02. How do I schedule an appointment?</span>
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+						</button>
+						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
+							You can schedule an appointment via our website, phone call, or by visiting our clinic directly.
+						</div>
+					</div>
+	
+					<!-- FAQ Item -->
+					<div class="bg-white text-black rounded-lg shadow-lg">
+						<button class="w-full flex justify-between items-center px-6 py-4 text-left faq-toggle">
+							<span class="text-sm lg:text-lg font-medium">03. What are the clinic hours of operation?</span>
+							<img src="assets/img/add-circle.png" alt="Toggle Button" class="toggle-icon w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6" data-open="assets/img/minus-cirlce-green.png" data-close="assets/img/add-circle.png">
+						</button>
+						<div class="faq-content hidden px-6 py-3 text-sm lg:text-lg">
+							Our clinic is open Monday to Friday from 9 AM to 6 PM and on Saturdays from 10 AM to 4 PM.
+						</div>
+					</div>
+				</div>
             </div>
         </div>
     </section>
@@ -779,30 +779,6 @@
             });
         });
     </script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.toggle-content').forEach(button => {
-            button.addEventListener('click', function () {
-                let targetId = this.getAttribute('data-target'); // Get target ID
-                let target = document.getElementById(targetId); // Get target div
-                let addSrc = this.getAttribute('data-add-src'); // Plus icon src
-                let minusSrc = this.getAttribute('data-minus-src'); // Minus icon src
-
-                if (target) {
-                    target.classList.toggle('hidden'); // Show/Hide content
-
-                    // Icon Change Logic
-                    if (target.classList.contains('hidden')) {
-                        this.src = addSrc; // Show plus icon
-                    } else {
-                        this.src = minusSrc; // Show minus icon
-                    }
-                }
-            });
-        });
-    });
-</script>
 
 
 
