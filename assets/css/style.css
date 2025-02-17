@@ -31,7 +31,6 @@
 }
 
 body {
-  background-color: #fff;
   font-family: "Outfit", serif;
 }
 
@@ -372,9 +371,35 @@ h2 {
   z-index: 999;
   background-color: #C1DCFF;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.096);
-  transition: background-color 0.3s;
-  overflow-x: hidden;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+  overflow-x: visible;
 }
+
+.stickyheader.active {
+  background-color: #A0B8FF; /* Change the background on scroll or active */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Add stronger shadow when active */
+}
+
+.stickyheader .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.stickyheader .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.stickyheader .dropdown-content a:hover {
+  background-color: #575757;
+}
+
 
 @keyframes marquee {
   from {
@@ -392,6 +417,10 @@ h2 {
 
 .stickyheader nav a {
   color: #000;
+}
+
+.stickyheader .cuscolor {
+  color: #FFF;
 }
 
 .stickyheader #stickyLogo {

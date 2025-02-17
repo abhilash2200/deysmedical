@@ -379,3 +379,37 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
       }
   });
 })
+
+
+	// Function to close the dropdown
+	function closeDropdown() {
+		var dropdown = document.getElementById('servicesDropdown');
+		var icon = document.getElementById('servicesIcon');
+		dropdown.classList.add('hidden');
+		icon.textContent = ' +';
+	}
+
+	// Toggle dropdown when clicking on Services link
+	document.getElementById('servicesLink').addEventListener('click', function(event) {
+		event.stopPropagation();  // Prevent the click event from propagating to document
+		var dropdown = document.getElementById('servicesDropdown');
+		var icon = document.getElementById('servicesIcon');
+		
+		// Toggle the visibility of the dropdown
+		if (dropdown.classList.contains('hidden')) {
+			dropdown.classList.remove('hidden');
+			icon.textContent = ' -';
+		} else {
+			closeDropdown();
+		}
+	});
+
+	// Close dropdown if click happens outside of the dropdown or services link
+	document.addEventListener('click', function(event) {
+		var dropdown = document.getElementById('servicesDropdown');
+		var servicesLink = document.getElementById('servicesLink');
+		
+		if (!dropdown.contains(event.target) && !servicesLink.contains(event.target)) {
+			closeDropdown();
+		}
+	});
