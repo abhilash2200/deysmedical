@@ -1,11 +1,11 @@
 
-// slider js
- var $carousel = $('[data-owl-carousel]');
- if ($carousel.length) {
-     $carousel.each(function (index, el) {
-         $(this).owlCarousel($(this).data('owl-carousel'));
-     });
- }
+// // slider js
+//  var $carousel = $('[data-owl-carousel]');
+//  if ($carousel.length) {
+//      $carousel.each(function (index, el) {
+//          $(this).owlCarousel($(this).data('owl-carousel'));
+//      });
+//  }
 
 //  event tab
 
@@ -42,23 +42,30 @@ $(function() {
 
     // header js     
     
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      var logo = document.getElementById("stickyLogo");
-      var section = document.querySelector("header section");
-  
-      if (window.scrollY > 100) {
-          header.classList.add("stickyheader");
-          header.style.position = "fixed";
-          logo.classList.remove("hidden"); 
-          section.style.justifyContent = "space-between";
-      } else {
-          header.classList.remove("stickyheader");
-          header.style.position = "absolute";
-          logo.classList.add("hidden");
-          section.style.justifyContent = "flex-end";
-      }
-  });
+function handleScroll() {
+    var header = document.querySelector("header");
+    var logo = document.getElementById("stickyLogo");
+    var section = document.querySelector("header section");
+
+    if (window.scrollY > 100) {
+        header.classList.add("stickyheader");
+        header.style.position = "fixed";
+        logo.classList.remove("hidden");
+        section.style.justifyContent = "space-between";
+    } else {
+        header.classList.remove("stickyheader");
+        header.style.position = "absolute";
+        logo.classList.add("hidden");
+        section.style.justifyContent = "flex-end";
+    }
+}
+
+// On scroll
+window.addEventListener("scroll", handleScroll);
+
+// On page load
+window.addEventListener("load", handleScroll);
+
   
   
 
@@ -105,16 +112,16 @@ function topFunction() {
 // data aos
 
 
-  AOS.init();
-  AOS.refresh(); // initialize AOS animations
-  $(document).ready(function(){
-      $("body,html").animate({
-          scrollTop: 10
-      }, 1000);
-      $("body,html").animate({
-          scrollTop: 0
-      }, 1);
-  });
+  // AOS.init();
+  // AOS.refresh(); // initialize AOS animations
+  // $(document).ready(function(){
+  //     $("body,html").animate({
+  //         scrollTop: 10
+  //     }, 1000);
+  //     $("body,html").animate({
+  //         scrollTop: 0
+  //     }, 1);
+  // });
 
 // loader js
 var loader = document.getElementById("preloader");
