@@ -369,7 +369,8 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #C1DCFF;
+  background-color: #1376f8;
+  padding:  0px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.096);
   transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
   overflow-x: visible;
@@ -416,7 +417,7 @@ h2 {
 
 
 .stickyheader nav a {
-  color: #000;
+  color: #fff;
 }
 
 .stickyheader .cuscolor {
@@ -429,7 +430,7 @@ h2 {
 
 .stickyheader
 .customs-text {
-  color: #000;
+  color: #fff;
 }
 
 .customs-text {
@@ -678,12 +679,17 @@ ul li {
 }
 
 .order {
-  position: fixed;
-  display: block;
-  top: 55%;
-  left: 3%;
-  cursor: pointer;
-  z-index: 999;
+    position: fixed;
+    display: block;
+    top: 55%;
+    left: -3%;
+    cursor: pointer;
+    z-index: 999;
+    background-color: #C80807;
+    color: #fff;
+    padding: 10px 30px;
+    transform: rotate(-90deg);
+    letter-spacing: 3px;
 }
 
 .fa-bag-shopping {
@@ -1236,3 +1242,4 @@ ul li {
     justify-content: center; 
     fill: #fff;
 }
+

@@ -425,7 +425,7 @@
 				<!-- Left Column -->
 				<div class="w-full lg:w-5/12 md:w-5/12">
 					<div class="md:mb-8 mb-4">
-						<img src="assets/img/footer-img.png" alt="Footer Logo" class="w-32 md:w-40 lg:w-48">
+						<img src="assets/img/logo.png" alt="Footer Logo" class="w-[120px]">
 						<p class="text-gray-300 md:mt-4 mt-0">
 							Deys Medicare serves as your trusted gateway to comprehensive healthcare solutions,
 							delivering an array of services tailored to meet your health needs.
@@ -540,7 +540,8 @@
 		</div>
 		<hr class="border-gray-400 my-4">
 		<p class="text-center text-gray-300 text-sm">
-			Copyright © 2024 DigitalWolf. All rights reserved.
+			Copyright ©
+			<script>document.write(new Date().getFullYear())</script> DigitalWolf. All rights reserved.
 		</p>
 	</section>
 
@@ -555,7 +556,7 @@
 
 
 	<!-- Sticky Bottom Button -->
-	<section class="sticky bottom-0 md:hidden lg:hidden z-20">
+	<section class="hidden bottom-0 md:hidden lg:hidden z-20">
         <div class="container mx-auto">
             <div class="flex flex-wrap justify-around">
                     <div class="w-[33.33%] flex justify-center bg-[#29A71A] py-3">
@@ -585,9 +586,9 @@
         <i class="fa-solid fa-chevron-up" onclick="topFunction()" title="Go top"></i>
     </div>
 
-    <div class="order">
-        <i class="fa-solid fa-bag-shopping" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-    </div>
+   <a href="tel:1234567890"><div class="order" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		<h6>For Emergency Call</h6>
+	</div></a>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
