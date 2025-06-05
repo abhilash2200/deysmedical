@@ -66,6 +66,7 @@ window.addEventListener("scroll", handleScroll);
 // On page load
 window.addEventListener("load", handleScroll);
 
+<<<<<<< HEAD
     // Show the floating menu on scroll
   window.addEventListener("scroll", function () {
     const menu = document.getElementById("floatingMenu");
@@ -75,6 +76,8 @@ window.addEventListener("load", handleScroll);
       menu.classList.add("hidden");
     }
   });
+=======
+>>>>>>> 78f071c32ed2ad4c0ac4324f20fcd114096e6321
   
 
   

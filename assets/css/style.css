@@ -369,8 +369,13 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 999;
+<<<<<<< HEAD
   background-color: #1376f8;
   padding:  0px;
+=======
+  background-color: #C1DCFF;
+
+>>>>>>> 78f071c32ed2ad4c0ac4324f20fcd114096e6321
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.096);
   transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
   overflow-x: visible;
